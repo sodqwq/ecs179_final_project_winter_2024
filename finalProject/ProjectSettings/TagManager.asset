@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - player
   - 
   - 
   - 
@@ -46,4 +46,16 @@ TagManager:
     locked: 0
   - name: New Layer 2
     uniqueID: 3841501139
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 295263143
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 3722763993
+    locked: 0
+  - name: Ground
+    uniqueID: 2336867133
+    locked: 0
+  - name: player
+    uniqueID: 1955584303
     locked: 0
