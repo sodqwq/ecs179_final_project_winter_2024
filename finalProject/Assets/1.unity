@@ -5821,6 +5821,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   Speed: 240
+  mJumpForce: 100
 --- !u!70 &452885518
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5854,7 +5855,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.25, y: 0.31}
+  m_Size: {x: 0.25, y: 0.33}
   m_Direction: 0
 --- !u!50 &452885519
 Rigidbody2D:
@@ -5965,8 +5966,8 @@ Transform:
   m_GameObject: {fileID: 452885516}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.1916, y: -1.165, z: 0}
-  m_LocalScale: {x: 8, y: 8.302816, z: 0}
+  m_LocalPosition: {x: -29.1868, y: -1.1722, z: 0}
+  m_LocalScale: {x: 8.0304, y: 8.3476515, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1941555045}
@@ -7260,8 +7261,8 @@ Transform:
   m_GameObject: {fileID: 1941555044}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.15, z: 0}
+  m_LocalScale: {x: 1.1397643, y: -4.390846, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 452885522}

@@ -27,13 +27,15 @@ public class playerCtrl : MonoBehaviour
         //目前check ground 有些问题，回头修复一下，现在先保持为true
         foreach (Collider2D c in colliders)
         {
-            if (c.gameObject != gameObject)
-            {
-                isGround = true;
-            }
+            isGround = true;
             numJump = 0;
-
         }
+
+        if(m_anim.GetBool("ground") != isGround)
+        {
+            m_anim.SetBool("ground", isGround);
+        }
+
 
         if (m_body.velocity.y == 0)
         {
