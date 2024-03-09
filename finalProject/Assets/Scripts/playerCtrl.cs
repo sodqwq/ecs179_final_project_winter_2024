@@ -18,6 +18,7 @@ public class playerCtrl : MonoBehaviour
     public float Speed = 100f;
     public float mJumpForce = 100f;
     bool mJump;
+    int numJump;
     private void FixedUpdate()
     {
         bool isGround = false;
@@ -30,6 +31,8 @@ public class playerCtrl : MonoBehaviour
             {
                 isGround = true;
             }
+            numJump = 0;
+
         }
 
         if (m_body.velocity.y == 0)
@@ -42,7 +45,17 @@ public class playerCtrl : MonoBehaviour
         }
 
         float playerMoving = Input.GetAxis("Horizontal");
-        mJump = Input.GetButtonDown("Jump");
+        if (numJump == 0)
+        {
+            mJump = Input.GetButtonDown("Jump");
+        }
+        else if (numJump == 1)
+        {
+            if (m_body.velocity.y <= 0)
+            {
+                mJump = Input.GetButtonDown("Jump");
+            }
+        }
         Move(playerMoving, mJump);
     }
     private void Move(float playerMoving, bool jump)
@@ -83,6 +96,7 @@ public class playerCtrl : MonoBehaviour
         }
         if (jump)
         {
+            numJump++;
             move.y = mJumpForce * Time.deltaTime;
         }
         m_body.velocity = move;
@@ -102,6 +116,8 @@ public class playerCtrl : MonoBehaviour
 
         m_anim = GetComponent<Animator>();
         m_body = GetComponent<Rigidbody2D>();
+        mJump = false;
+        numJump = 0;
     }
 
     // Update is called once per frame

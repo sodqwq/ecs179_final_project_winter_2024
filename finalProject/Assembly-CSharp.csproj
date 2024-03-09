@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/playerCtrl.cs" />
+    <Compile Include="Assets/Scripts/toGetTrigger.cs" />
+    <Compile Include="Assets/Scripts/Event1.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
