@@ -1,0 +1,946 @@
+Unity Editor version:    2022.3.16f1 (d2c21f0ef2f1)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 14.3.1 (Build 23D60)
+Darwin version:          23.3.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+/Users/yirsong/ecs179_final_project_winter_2024/finalProject
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+50512
+Successfully changed project path to: /Users/yirsong/ecs179_final_project_winter_2024/finalProject
+/Users/yirsong/ecs179_final_project_winter_2024/finalProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [140704573425600] Host "[IP] 10.0.0.206 [Port] 0 [Flags] 2 [Guid] 1738739052 [EditorId] 1738739052 [Version] 1048832 [Id] OSXEditor(0,YirdeMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [140704573425600] Host "[IP] 10.0.0.206 [Port] 0 [Flags] 2 [Guid] 1738739052 [EditorId] 1738739052 [Version] 1048832 [Id] OSXEditor(0,YirdeMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 14.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.16f1 (d2c21f0ef2f1)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/yirsong/ecs179_final_project_winter_2024/finalProject/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: AMD Radeon Pro 560X (high power)
+Metal devices available: 2
+0: AMD Radeon Pro 560X (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 560X (high power)
+Initializing Metal device caps: AMD Radeon Pro 560X
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56774
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.003117 seconds.
+- Loaded All Assemblies, in  0.448 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.347 seconds
+Domain Reload Profiling: 796ms
+	BeginReloadAssembly (126ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (195ms)
+		LoadAssemblies (126ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (191ms)
+			TypeCache.Refresh (188ms)
+				TypeCache.ScanAssembly (169ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (348ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (269ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (188ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.596 seconds
+Refreshing native plugins compatible for Editor in 4.03 ms, found 3 plugins.
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.990 seconds
+Domain Reload Profiling: 2592ms
+	BeginReloadAssembly (240ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (1245ms)
+		LoadAssemblies (1016ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (365ms)
+			TypeCache.Refresh (322ms)
+				TypeCache.ScanAssembly (253ms)
+			ScanForSourceGeneratedMonoScriptInfo (32ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (990ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (751ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (574ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+database is locked
+database is locked
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.08 seconds
+Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4019 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 64 unused Assets / (55.1 KB). Loaded Objects now: 4481.
+Memory consumption went from 153.4 MB to 153.3 MB.
+Total: 5.842322 ms (FindLiveObjects: 0.448180 ms CreateObjectMapping: 0.366747 ms MarkObjects: 4.823227 ms  DeleteObjects: 0.203282 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 14360.323443 seconds.
+  path: Assets/Sprits/sprfloor7.png
+  artifactKey: Guid(e19e4ad62da1ed34686838511d5aa3e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprfloor7.png using Guid(e19e4ad62da1ed34686838511d5aa3e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '41d91d78bbe4feb2f69cc16c2f14c7dc') in 0.200790 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/tilemap/Terrain (16x16)_111.asset
+  artifactKey: Guid(969be71b16669d8449c35ff4b53b146a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_111.asset using Guid(969be71b16669d8449c35ff4b53b146a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'dc506f3fb93db52f5dccfb63199d39c1') in 0.029633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Animation/Jump (32x32).png
+  artifactKey: Guid(519997fa76b150b4fa30dda4d710a89c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animation/Jump (32x32).png using Guid(519997fa76b150b4fa30dda4d710a89c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6740a7cc5be3778ecc129647ec49e1cd') in 0.034740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Sprits/sprPlayerRunning.png
+  artifactKey: Guid(dc01f0fd36165244fb7436a74fc5e9e9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprPlayerRunning.png using Guid(dc01f0fd36165244fb7436a74fc5e9e9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8eec73f8231b68c99f99a7f2625a840a') in 0.053333 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Main Characters/Appearing (96x96).png
+  artifactKey: Guid(e0b0e3ec7cf278e4897570fc61d5ad36) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Appearing (96x96).png using Guid(e0b0e3ec7cf278e4897570fc61d5ad36) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7950e0af7b812c156ab0a5e5774dfb03') in 0.050643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/tilemap/Blue.asset
+  artifactKey: Guid(153b64ea3a7f02b4891eb8607b7147e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Blue.asset using Guid(153b64ea3a7f02b4891eb8607b7147e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7112bda62111d9ba182541d6dcba3968') in 0.009072 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Background/Green.png
+  artifactKey: Guid(3644889a3db2af041847d63edfb05865) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Background/Green.png using Guid(3644889a3db2af041847d63edfb05865) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'abae1c016beca37d144961e3ab722f0f') in 0.031429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Background/Blue.png
+  artifactKey: Guid(53292cdcbc71c9947bbd1c828c7a2564) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Background/Blue.png using Guid(53292cdcbc71c9947bbd1c828c7a2564) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '834b1c77172ed22ecde8f0f7b078cf50') in 0.031589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/Sprits/sprBlock.png
+  artifactKey: Guid(6f161b7f785733a4bb8bff9d5dd1cb2f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprBlock.png using Guid(6f161b7f785733a4bb8bff9d5dd1cb2f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '60a6965e56e53f97666b8b85129c4194') in 0.028774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Sprits/sprfloor2.png
+  artifactKey: Guid(007a042e19fe2d54e8e78583bb961536) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprfloor2.png using Guid(007a042e19fe2d54e8e78583bb961536) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '26ed6eceae7a075bed16746a918289df') in 0.029899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/tilemap/Terrain (16x16)_0.asset
+  artifactKey: Guid(4af9bb0988dbee1478a4131d554a43e4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_0.asset using Guid(4af9bb0988dbee1478a4131d554a43e4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fa555730ab2f913ae04350e381375a8a') in 0.011463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/tilemap/Terrain (16x16)_10.asset
+  artifactKey: Guid(a91151e40a891e94e9dba83519f4a91e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_10.asset using Guid(a91151e40a891e94e9dba83519f4a91e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '043d6e4bc48ed49393026bc909d11a29') in 0.009548 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/tilemap/Terrain (16x16)_113.asset
+  artifactKey: Guid(0ae2f20ef8c8c77458c8e83404bac5c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_113.asset using Guid(0ae2f20ef8c8c77458c8e83404bac5c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6148099302e560c77383420b3dc1bd27') in 0.010316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/tilemap/Terrain (16x16)_105.asset
+  artifactKey: Guid(1c593039c64b3964aba455e6a420367c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_105.asset using Guid(1c593039c64b3964aba455e6a420367c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7d7784ab65f01c03f97462e31aa65fe6') in 0.009355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/1.unity
+  artifactKey: Guid(d0ec2caa06ee7f34891bfd542c1bbc52) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/1.unity using Guid(d0ec2caa06ee7f34891bfd542c1bbc52) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0192949a800d3981cd0edee434463f16') in 0.004354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/tilemap/Terrain (16x16)_110.asset
+  artifactKey: Guid(c04610692649a96479e0b0ec20ba4e4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_110.asset using Guid(c04610692649a96479e0b0ec20ba4e4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1b4ac6d43ca585b814aa38b017a80c31') in 0.009331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Animation/jumping.anim
+  artifactKey: Guid(623f8fa952b5ffd4bab4327a923551f7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animation/jumping.anim using Guid(623f8fa952b5ffd4bab4327a923551f7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'eeb772b9a72a9cffe3471afcaa872e50') in 0.010249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Sprits/sprfloor8.png
+  artifactKey: Guid(738a5e7f9bedf614e862323f81d60918) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprfloor8.png using Guid(738a5e7f9bedf614e862323f81d60918) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '826a7615b46da705cf2fbfdc9a7a14ef') in 0.031569 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Sprits/sprSave.png
+  artifactKey: Guid(84692c76847856a409c4178848179d11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprSave.png using Guid(84692c76847856a409c4178848179d11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '659c1a10de1c69e16e12dfe356d77624') in 0.030409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Sprits/sprNomalSave.png
+  artifactKey: Guid(ab50599143c754642ac03ff6f8a23f4c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprNomalSave.png using Guid(ab50599143c754642ac03ff6f8a23f4c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a47caa9c9bf769da09d8645c4f6abc24') in 0.030453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/tilemap/Terrain (16x16)_19.asset
+  artifactKey: Guid(2a07948e040839c49900eecd4b03d06c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_19.asset using Guid(2a07948e040839c49900eecd4b03d06c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4dec03b57e47ee863a9919b364614344') in 0.009746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/tilemap/Terrain (16x16)_28.asset
+  artifactKey: Guid(6442d08f7e191074fb077dd733a396d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_28.asset using Guid(6442d08f7e191074fb077dd733a396d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c915522b148ea40a90f574015ea267df') in 0.009853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/tilemap/Terrain (16x16)_139.asset
+  artifactKey: Guid(5387da3e3d7a2f845b810b9d05858565) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_139.asset using Guid(5387da3e3d7a2f845b810b9d05858565) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '24fdfe878484e4e9235483453fd10418') in 0.009006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/tilemap/Terrain (16x16)_37.asset
+  artifactKey: Guid(b193aeee9d522c4489e792e3317aaba9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_37.asset using Guid(b193aeee9d522c4489e792e3317aaba9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6134687a064cd0defadf9495b6715c9b') in 0.009188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/tilemap/Terrain (16x16)_137.asset
+  artifactKey: Guid(f493162b900057b45bbd4dd4b231e71c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_137.asset using Guid(f493162b900057b45bbd4dd4b231e71c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4b8b7696330815c7d9ada6786feb0146') in 0.010453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/tilemap/Terrain (16x16)_16.asset
+  artifactKey: Guid(5ef67df6f4267874790d199a5833c9ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_16.asset using Guid(5ef67df6f4267874790d199a5833c9ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '06f37defd44a31cc397a0e3598d754df') in 0.008902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/tilemap/Terrain (16x16)_136.asset
+  artifactKey: Guid(018466bdd667f5249849ce1fe9ed9c65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_136.asset using Guid(018466bdd667f5249849ce1fe9ed9c65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '73b6938580c7c6f9daa777e3de7712b7') in 0.010651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/tilemap/Terrain (16x16)_44.asset
+  artifactKey: Guid(a6cce45b953fbb64e8015e461467c3c6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_44.asset using Guid(a6cce45b953fbb64e8015e461467c3c6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '484b237552b44eb6726c00c99e18dcbf') in 0.010911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/tilemap/Terrain (16x16)_18.asset
+  artifactKey: Guid(7784e277ad51893498e2f9e33971f09f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_18.asset using Guid(7784e277ad51893498e2f9e33971f09f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ed8fc826f007da62035606daafc420f9') in 0.009209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/tilemap/Terrain (16x16)_47.asset
+  artifactKey: Guid(02c6fe22df3472e459be65b53850ffea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_47.asset using Guid(02c6fe22df3472e459be65b53850ffea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5355ac8f9e4c7e08e94aad71a23873d8') in 0.012626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/tilemap/Terrain (16x16)_101.asset
+  artifactKey: Guid(424155d310d532641a40501368a5af0b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_101.asset using Guid(424155d310d532641a40501368a5af0b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9a415bca843a02ba79323ef262c6f014') in 0.008668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/tilemap/Terrain (16x16)_135.asset
+  artifactKey: Guid(f6d618b7f9f8e6347acc74e3f2cb9215) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_135.asset using Guid(f6d618b7f9f8e6347acc74e3f2cb9215) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c0fef2dc4d75606e0a9a3b2b3826ac3c') in 0.009989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/tilemap/Terrain (16x16)_27.asset
+  artifactKey: Guid(59ac80236ff05df46b4883f4e86bbdb1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_27.asset using Guid(59ac80236ff05df46b4883f4e86bbdb1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ec40181287b0d2335c2965d17c93b275') in 0.009600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/tilemap/Terrain (16x16)_31.asset
+  artifactKey: Guid(d8953dae3a9428d4d9e74720e34659aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_31.asset using Guid(d8953dae3a9428d4d9e74720e34659aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c37df010ab9689f49dbb7cdd803c8357') in 0.008520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/tilemap/Terrain (16x16)_133.asset
+  artifactKey: Guid(90c1c244ce46272408a3543f080c3865) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_133.asset using Guid(90c1c244ce46272408a3543f080c3865) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b3b03b3fbb104d51558c2545e6b721f0') in 0.009718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/tilemap/Terrain (16x16)_12.asset
+  artifactKey: Guid(408d14149cbe86a4ea70b5ef6414cb23) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_12.asset using Guid(408d14149cbe86a4ea70b5ef6414cb23) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'eabc6b65696a558456f480cde0797a02') in 0.009304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/tilemap/Terrain (16x16)_1.asset
+  artifactKey: Guid(9f37b29ae1b755846bcdebfb7e3ef914) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_1.asset using Guid(9f37b29ae1b755846bcdebfb7e3ef914) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c3782b77f006a6bd4e13edbec7a3039b') in 0.010964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/tilemap/Terrain (16x16)_116.asset
+  artifactKey: Guid(689f6383c8d0caa419da9a3ebe429cb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_116.asset using Guid(689f6383c8d0caa419da9a3ebe429cb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '43b2555824cfd34645c8724c8cc810e7') in 0.009824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/tilemap/Terrain (16x16)_34.asset
+  artifactKey: Guid(2dc9ef20bff5ee640b438612943669d5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_34.asset using Guid(2dc9ef20bff5ee640b438612943669d5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c1d00f21717dca10723ece01e7c44bfb') in 0.008359 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/tilemap/Terrain (16x16)_112.asset
+  artifactKey: Guid(50f8a8c8e62a3644697fc8dfbd3ed889) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_112.asset using Guid(50f8a8c8e62a3644697fc8dfbd3ed889) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '053f43100d719f0ab0050f3cbd481d45') in 0.010079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/tilemap/Terrain (16x16)_141.asset
+  artifactKey: Guid(13f3ead3b63d05c45b4cb5f598c7b9b1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_141.asset using Guid(13f3ead3b63d05c45b4cb5f598c7b9b1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8e5efbf1a554102525e3be9ba43fc17e') in 0.009257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/tilemap/Terrain (16x16)_20.asset
+  artifactKey: Guid(c31700d2b3119594b8e173c4562b4dc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_20.asset using Guid(c31700d2b3119594b8e173c4562b4dc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c1d6ab4da0605dda69bd89da5f71f3f5') in 0.010263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Sprits/sprPlayerJump.png
+  artifactKey: Guid(28096552c5cc6824baad208f774f625a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprPlayerJump.png using Guid(28096552c5cc6824baad208f774f625a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '50cd1cffdf68fd399bd3bbd2ea6cbd3b') in 0.036723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/tilemap/Terrain (16x16)_130.asset
+  artifactKey: Guid(591655f2408a79c45a785b1f099263e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_130.asset using Guid(591655f2408a79c45a785b1f099263e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8a433c89f04fc281eefaaf355ad2304c') in 0.009253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Sprits/sprfloor6.png
+  artifactKey: Guid(bdf8778e604a4f748af1f0bd26b33f63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprfloor6.png using Guid(bdf8778e604a4f748af1f0bd26b33f63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3e023a1c10db54d8405a565ad8b656fd') in 0.032451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/tilemap/Terrain (16x16)_122.asset
+  artifactKey: Guid(71243e8186a4fec448854846e1015bad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_122.asset using Guid(71243e8186a4fec448854846e1015bad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b1e33757369af8c55ac3888d5b1b78da') in 0.009052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/tilemap/Terrain (16x16)_2.asset
+  artifactKey: Guid(fc0813eabade4994db5bda1fdd6ae3da) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_2.asset using Guid(fc0813eabade4994db5bda1fdd6ae3da) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '52dc9f2d43c6b6da4927dee43706bc99') in 0.013111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/tilemap/Terrain (16x16)_23.asset
+  artifactKey: Guid(24b7effe02384604d8f52f100cbf3011) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_23.asset using Guid(24b7effe02384604d8f52f100cbf3011) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8e1cb10a2d105f2a69f396d5236f491d') in 0.008430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/tilemap/Terrain (16x16)_43.asset
+  artifactKey: Guid(d16378990040d684ebc1f90f4ec137df) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_43.asset using Guid(d16378990040d684ebc1f90f4ec137df) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fac175c5e22d10de35f240f5b29916b5') in 0.009030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/tilemap/Terrain (16x16)_134.asset
+  artifactKey: Guid(b94a61d430f00d745a6216d60d37a4e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_134.asset using Guid(b94a61d430f00d745a6216d60d37a4e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'af4cbeb02188d53a58bd9f0cd5b0da68') in 0.008003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/tilemap/Terrain (16x16)_38.asset
+  artifactKey: Guid(efa0437269a77ce4ba4c594ef502acab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_38.asset using Guid(efa0437269a77ce4ba4c594ef502acab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '24a7226570be3662f588d6f6a29ddf54') in 0.009367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Sprits/sprfloor10.png
+  artifactKey: Guid(1c5d91c3ca30c1c46b0e78e10257cef0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprfloor10.png using Guid(1c5d91c3ca30c1c46b0e78e10257cef0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3019bb610a111d0516facd3372513e69') in 0.029981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/tilemap/Terrain (16x16)_26.asset
+  artifactKey: Guid(4570e45fea36684458fc9d0446fe10c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_26.asset using Guid(4570e45fea36684458fc9d0446fe10c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'cb38796030a2164c17742e3f3f3af424') in 0.007676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/tilemap/Terrain (16x16)_35.asset
+  artifactKey: Guid(b4654ed499f084f4c8785f444600e4e4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_35.asset using Guid(b4654ed499f084f4c8785f444600e4e4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '927bc4f405d04dbee38da2e9ed2d3abb') in 0.010941 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/tilemap/Terrain (16x16)_123.asset
+  artifactKey: Guid(3fe66a8399f358a458754dfc1df3315a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_123.asset using Guid(3fe66a8399f358a458754dfc1df3315a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '41280a584a1cd732d4de746bc9fae8fa') in 0.010108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/tilemap/Terrain (16x16)_129.asset
+  artifactKey: Guid(87bba798156cf454e98c486603274c34) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_129.asset using Guid(87bba798156cf454e98c486603274c34) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3ed872d3e5ebe28541044e10827e7315') in 0.008968 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/tilemap/Terrain (16x16)_114.asset
+  artifactKey: Guid(08e57732b9e2c9f4980b5eaa17f0306a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_114.asset using Guid(08e57732b9e2c9f4980b5eaa17f0306a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '58696e1b840810fc5815da9190f15386') in 0.008220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/tilemap/Terrain (16x16)_33.asset
+  artifactKey: Guid(82bc95311798c504b865fe8ee896cdfa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_33.asset using Guid(82bc95311798c504b865fe8ee896cdfa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4f3719dcc1e632363c07a6c6b2c45d4d') in 0.007793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Animation/Idle (32x32)_0.controller
+  artifactKey: Guid(f9d6c6f461fa0b84c84707e36de044f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animation/Idle (32x32)_0.controller using Guid(f9d6c6f461fa0b84c84707e36de044f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9b5b3d9856b5335ec93510eae29b49f8') in 0.006785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/tilemap/Terrain (16x16)_115.asset
+  artifactKey: Guid(733d6dbd9bb1ccd4889271d9872d47d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_115.asset using Guid(733d6dbd9bb1ccd4889271d9872d47d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0c1cf675a031fdf00b69519d7fccd84d') in 0.009877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6b18ea212e2ec99ba98593721bb16b35') in 0.003585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Main Characters/Desappearing (96x96).png
+  artifactKey: Guid(17d9f955f16d9564ab9715879c8062d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Desappearing (96x96).png using Guid(17d9f955f16d9564ab9715879c8062d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2975bafa283e63c97a887f42eb91c20f') in 0.050872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Main Characters/Pink Man/Double Jump (32x32).png
+  artifactKey: Guid(89f1591d948c3aa4aa4c4e3042f6d168) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Pink Man/Double Jump (32x32).png using Guid(89f1591d948c3aa4aa4c4e3042f6d168) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bbdce0e523c62d55c01a31697efd853c') in 0.073450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/tilemap/Terrain (16x16)_64.asset
+  artifactKey: Guid(2f3fc8f4afaf7214b910ab9048646b52) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_64.asset using Guid(2f3fc8f4afaf7214b910ab9048646b52) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4e532307c3f29a10f9075313d518988e') in 0.019566 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/tilemap/Terrain (16x16)_61.asset
+  artifactKey: Guid(1c45b2a0614a9a84e92c3863b6830336) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_61.asset using Guid(1c45b2a0614a9a84e92c3863b6830336) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '95fff0c93dd6e5274aac387086538159') in 0.011743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/tilemap/Terrain (16x16)_94.asset
+  artifactKey: Guid(07571fc1a8cc66d4e85499580e0b918c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_94.asset using Guid(07571fc1a8cc66d4e85499580e0b918c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '704142255b1de5020a052a9401049004') in 0.012878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/tilemap/Terrain (16x16)_50.asset
+  artifactKey: Guid(64e70c5f5246617418f664e0230f964e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_50.asset using Guid(64e70c5f5246617418f664e0230f964e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e12825f9a5115ea7286edfaef6d1e9eb') in 0.012148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Main Characters/Ninja Frog/Idle (32x32).png
+  artifactKey: Guid(78467db4139759c4d89d28d7b6ddbcae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Ninja Frog/Idle (32x32).png using Guid(78467db4139759c4d89d28d7b6ddbcae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a210bcaf935d80c9f08c00e4eeddc101') in 0.090402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/tilemap/Terrain (16x16)_6.asset
+  artifactKey: Guid(4b6f0a54673b3724ca2911cc92d48257) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_6.asset using Guid(4b6f0a54673b3724ca2911cc92d48257) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '65cfe13e28e6989e1e1cfe2e4cd9656f') in 0.013784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Main Characters/Pink Man/Idle (32x32).png
+  artifactKey: Guid(a65dadded0af214469fcef72272cf13d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Pink Man/Idle (32x32).png using Guid(a65dadded0af214469fcef72272cf13d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'cecbdaaa0926fea73c836403aec1662f') in 0.078895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/tilemap/Terrain (16x16)_73.asset
+  artifactKey: Guid(2512baf132ac4074e9b7e00888dbc7bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_73.asset using Guid(2512baf132ac4074e9b7e00888dbc7bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6366da633a5a5ef8786eadea16bf471a') in 0.010482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/tilemap/Terrain (16x16)_66.asset
+  artifactKey: Guid(e5d4315454d91a0429e90b097088f903) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_66.asset using Guid(e5d4315454d91a0429e90b097088f903) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ac745603890681678211006684791637') in 0.009103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/tilemap/Terrain (16x16)_84.asset
+  artifactKey: Guid(6a5f68abea1cca347b64cb91d7088b7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_84.asset using Guid(6a5f68abea1cca347b64cb91d7088b7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3bfa16e4e0e349657ecbf21a421e5d35') in 0.009589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/tilemap/Terrain (16x16)_95.asset
+  artifactKey: Guid(5dc1882f96eed3247ae9eb06afc41171) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_95.asset using Guid(5dc1882f96eed3247ae9eb06afc41171) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ccfb2e4c2e2dc1d3e9a4391199623410') in 0.009852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Main Characters/Ninja Frog/Jump (32x32).png
+  artifactKey: Guid(529223feb1f67c24bba48f569a076322) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Ninja Frog/Jump (32x32).png using Guid(529223feb1f67c24bba48f569a076322) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '67a0622cd79a5685d4c658100ff1d6eb') in 0.032653 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/tilemap/Terrain (16x16)_62.asset
+  artifactKey: Guid(4c942bd00d62a5c4c97da6e7df404dab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_62.asset using Guid(4c942bd00d62a5c4c97da6e7df404dab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '52079caf062ef69e2fc603e338c944ca') in 0.008524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/tilemap/Terrain (16x16)_53.asset
+  artifactKey: Guid(2abbb082a9b1e7d49bf99829a9545bf4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_53.asset using Guid(2abbb082a9b1e7d49bf99829a9545bf4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '592fcc779dde500461b74419b18e8ce5') in 0.010357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/tilemap/Terrain (16x16)_58.asset
+  artifactKey: Guid(d2f9c4cb69de7f84dbd4c532c9bc559d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_58.asset using Guid(d2f9c4cb69de7f84dbd4c532c9bc559d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1a748cfae3b3cebc7421b8f01b66cf2e') in 0.006897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/tilemap/Terrain (16x16)_8.asset
+  artifactKey: Guid(d706676410ca9cb46942d5c46054c07e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_8.asset using Guid(d706676410ca9cb46942d5c46054c07e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '275d7b4387b84c533c670164a422a2b6') in 0.010430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Main Characters/Ninja Frog/Fall (32x32).png
+  artifactKey: Guid(d3d6957f31765d9428703d14371766dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Ninja Frog/Fall (32x32).png using Guid(d3d6957f31765d9428703d14371766dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '99325313888e7d43f0675fa84e6b3350') in 0.034562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/tilemap/Terrain (16x16)_85.asset
+  artifactKey: Guid(1b72e4352b40f5345abd5e1626aeee5d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_85.asset using Guid(1b72e4352b40f5345abd5e1626aeee5d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3cfd41f83226e642eb4645661da112af') in 0.009436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Main Characters/Pink Man/Run (32x32).png
+  artifactKey: Guid(26003960c858104438faa835b301ea1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Pink Man/Run (32x32).png using Guid(26003960c858104438faa835b301ea1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6d616ed4cfcb72043822d3efc5c974d4') in 0.082153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Main Characters/Pink Man/Wall Jump (32x32).png
+  artifactKey: Guid(6656d1efa9db3e243b2783d5c240d4d9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Pink Man/Wall Jump (32x32).png using Guid(6656d1efa9db3e243b2783d5c240d4d9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b25c4634b1cf0d31098764983202ca41') in 0.044890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Main Characters/Virtual Guy/Fall (32x32).png
+  artifactKey: Guid(c0756f2ca91c75645ab6b24e27edce2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Virtual Guy/Fall (32x32).png using Guid(c0756f2ca91c75645ab6b24e27edce2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8015102c93d052bf062e3c2110ef8ae9') in 0.029451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/tilemap/Terrain (16x16)_83.asset
+  artifactKey: Guid(75256c2b7406f6841b74eb49b890fb00) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_83.asset using Guid(75256c2b7406f6841b74eb49b890fb00) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8525bc44e03b1283bc949fafbd9ffd3a') in 0.008167 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/tilemap/Terrain (16x16)_99.asset
+  artifactKey: Guid(4961589a431acbd4184ee30662ba488e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_99.asset using Guid(4961589a431acbd4184ee30662ba488e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '201c47ac66884dac04bfeabf9a124aef') in 0.007879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/tilemap/Terrain (16x16)_90.asset
+  artifactKey: Guid(cfefa0b5178175842b0b2d7301ed13ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_90.asset using Guid(cfefa0b5178175842b0b2d7301ed13ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3d66b15bf402e38dfbbed0f0e04d2e1a') in 0.009144 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/tilemap/Terrain (16x16)_60.asset
+  artifactKey: Guid(05aaced2ecedea6458b36212981779cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/tilemap/Terrain (16x16)_60.asset using Guid(05aaced2ecedea6458b36212981779cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4f52978af615ae4dd587c41cb956a286') in 0.008429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Sprits/sprBullet.png
+  artifactKey: Guid(30e1e206c731d6a498d9ce907577c9c0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprBullet.png using Guid(30e1e206c731d6a498d9ce907577c9c0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '416182d91f439da5cb9463da0a9ef4aa') in 0.030114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Sprits/sprDynamicPlatform01.asset
+  artifactKey: Guid(6e183127cdb14e54b88595e88a80d26a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprDynamicPlatform01.asset using Guid(6e183127cdb14e54b88595e88a80d26a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f7b8f9f25ae6c80384edf34cc8610830') in 0.010619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Sprits/sprfloor.asset
+  artifactKey: Guid(99215ea632d9ef94d81dae850daf1d9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprits/sprfloor.asset using Guid(99215ea632d9ef94d81dae850daf1d9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0f6a6cc11bb88dec403f69086e0683ad') in 0.010388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Main Characters/Virtual Guy/Wall Jump (32x32).png
+  artifactKey: Guid(dce7767ceb3616b43bdc2106d44f0f3f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Main Characters/Virtual Guy/Wall Jump (32x32).png using Guid(dce7767ceb3616b43bdc2106d44f0f3f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd9bf13ef3e040ecdab1acf108d5ed7cb') in 0.045858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Animation/Tilemap.controller
+  artifactKey: Guid(897a8d050a8e925468cf2092b589751a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animation/Tilemap.controller using Guid(897a8d050a8e925468cf2092b589751a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '12e9f851eda3c7717b4001e3e5f22222') in 0.005330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Background/Purple.png
+  artifactKey: Guid(633675a4a4e042b419ae9e774dc3e7ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Background/Purple.png using Guid(633675a4a4e042b419ae9e774dc3e7ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '061558a1c1b73b6165bb625a21db6ea9') in 0.030569 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting
