@@ -23,12 +23,13 @@ public class savePiont : MonoBehaviour
         
     }
 
-    void BeSave(int k)
+    void Beshot(int k)
     {
         Debug.Log("when shot save point is called");
         PlayerPrefs.SetFloat("playerPositionX", transform.position.x);
         PlayerPrefs.SetFloat("playerPositionY", transform.position.y);
         PlayerPrefs.SetFloat("playerPositionZ", transform.position.z);
+        Debug.Log("Player Position Saved");
         spriteRenderer.sprite  = saveSucess;
     }
 

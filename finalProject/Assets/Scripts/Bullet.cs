@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        // hitInfo.SendMessage("TakeDamage", 10, SendMessageOptions.DontRequireReceiver);
-        // Destroy(gameObject);
+        hitInfo.SendMessage("Beshot", damage, SendMessageOptions.DontRequireReceiver);
+        Destroy(gameObject);
     }
 }
