@@ -7,10 +7,11 @@ public class toGetTrigger : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D other)
     {
-      if(other.tag == "Palyer")
+        print("Before Trigger");
+      if(other.gameObject.tag == "Player")
         {
             print("trigger");
-            Destroy(other);
+            Destroy(other.gameObject);
         }      
     }
     void Start()

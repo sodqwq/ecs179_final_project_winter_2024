@@ -20,7 +20,7 @@ public class playerCtrl : MonoBehaviour
     public LayerMask m_checkLayer;
     public float Speed = 100f;
     public float mMaxSpeed = 10f;
-    public float mJumpForce = 50f;
+    public float mJumpForce = 100f;
     bool mIsJumping;
     int mJumpTimes;
 
@@ -64,7 +64,7 @@ public class playerCtrl : MonoBehaviour
                 mIsJumping = false;
             }
         }
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && mJumpTimes < 2)
         {
             mIsJumping = true;
             mCurrentJumpTime = 0;
