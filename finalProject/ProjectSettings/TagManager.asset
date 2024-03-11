@@ -12,8 +12,8 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
+  - Event
+  - bullet
   - player
   - ground
   - 
@@ -52,6 +52,9 @@ TagManager:
     locked: 0
   - name: New Layer 4
     uniqueID: 3722763993
+    locked: 0
+  - name: User Layer 8
+    uniqueID: 3882055677
     locked: 0
   - name: Ground
     uniqueID: 2336867133
