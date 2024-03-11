@@ -20,12 +20,12 @@ public class playerCtrl : MonoBehaviour
     public LayerMask m_checkLayer;
     public float Speed = 100f;
     public float mMaxSpeed = 10f;
-    public float mJumpForce = 1f;
+    public float mJumpForce = 50f;
     bool mIsJumping;
     int mJumpTimes;
 
     // Max Jump Time
-    public float maxJumpTime = 0.5f;
+    public float maxJumpTime = 1f;
     // Current Jump Time
     private float mCurrentJumpTime = 0;
     bool mIsGrounded = true;
