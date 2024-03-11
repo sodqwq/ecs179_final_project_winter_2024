@@ -14,72 +14,91 @@ public class playerCtrl : MonoBehaviour
     Rigidbody2D m_body;
     bool isFacingRight = true;
 
+    [SerializeField]
+    private GameObject mBullet;
+
     public LayerMask m_checkLayer;
     public float Speed = 100f;
-    public float mJumpForce = 100f;
-    bool mJump;
-    int numJump;
-    private void FixedUpdate()
+    public float mMaxSpeed = 10f;
+    public float mJumpForce = 1f;
+    bool mIsJumping;
+    int mJumpTimes;
+
+    // Max Jump Time
+    public float maxJumpTime = 0.5f;
+    // Current Jump Time
+    private float mCurrentJumpTime = 0;
+    bool mIsGrounded = true;
+    Vector2 m_velocity;
+    private bool IsGrounded()
     {
-        bool isGround = false;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(m_groundCheck.position, m_groundRadius, m_checkLayer);
-
-        //目前check ground 有些问题，回头修复一下，现在先保持为true
-        foreach (Collider2D c in colliders)
+        Debug.DrawRay(m_groundCheck.position, Vector2.down * m_groundRadius, Color.red);
+        RaycastHit2D hit = Physics2D.Raycast(m_groundCheck.position, Vector2.down, m_groundRadius, m_checkLayer);
+        if (hit.collider != null)
         {
-            isGround = true;
-            numJump = 0;
+            mJumpTimes = 0;
+            return true;
+        }
+        return false;
+    }
+    private void Update()
+    {
+        mIsGrounded = IsGrounded();
+
+        if(m_anim.GetBool("ground") != mIsGrounded)
+        {
+            m_anim.SetBool("ground", mIsGrounded);
         }
 
-        if(m_anim.GetBool("ground") != isGround)
+        if (mIsJumping && Input.GetButton("Jump"))
         {
-            m_anim.SetBool("ground", isGround);
+            if (mCurrentJumpTime < maxJumpTime)
+            {
+                m_velocity.x = m_body.velocity.x;
+                m_velocity.y = mJumpForce;
+                m_body.velocity = m_velocity;
+                mCurrentJumpTime += Time.deltaTime;
+            }
+            else
+            {
+                mIsJumping = false;
+            }
         }
-
-
-        if (m_body.velocity.y == 0)
+        if (Input.GetButtonDown("Jump"))
         {
-            m_anim.SetFloat("vSpeed", 0);
+            mIsJumping = true;
+            mCurrentJumpTime = 0;
+            mIsGrounded = false;
+            m_velocity.x = m_body.velocity.x;
+            if (mJumpTimes < 2)
+            {
+                mJumpTimes++;
+            }
         }
-        else
+        if (mIsJumping && Input.GetButtonUp("Jump"))
         {
-            m_anim.SetFloat("vSpeed", m_body.velocity.y / Mathf.Abs(m_body.velocity.y));
+            mIsJumping = false;
         }
 
         float playerMoving = Input.GetAxis("Horizontal");
-        if (numJump == 0)
+        Move(playerMoving);
+
+        if (Input.GetButtonDown("Fire1"))
         {
-            mJump = Input.GetButtonDown("Jump");
+            Debug.Log("Fire1");
+            GameObject bullet = Instantiate(mBullet, transform.position, Quaternion.identity);
+            bullet.GetComponent<Rigidbody2D>().velocity = isFacingRight ? new Vector2(10, 0) : new Vector2(-10, 0);
         }
-        else if (numJump == 1)
-        {
-            if (m_body.velocity.y <= 0)
-            {
-                mJump = Input.GetButtonDown("Jump");
-            }
-        }
-        Move(playerMoving, mJump);
     }
-    private void Move(float playerMoving, bool jump)
+    private void Move(float playerMoving)
     {
         Vector2 move = m_body.velocity;
 
-        if (playerMoving > 0)// h > 0
+        if (playerMoving != 0)// h > 0
         {
-            move.x = playerMoving / Mathf.Abs(playerMoving) * Speed * Time.deltaTime;
-            if (!isFacingRight)
-            {
-                Flip();
-            }
-            if (!m_anim.GetBool("run"))
-            {
-                m_anim.SetBool("run", true);
-            }
-        }
-        else if (playerMoving < 0)
-        {
-            move.x = playerMoving / Mathf.Abs(playerMoving) * Speed * Time.deltaTime;
-            if (isFacingRight)
+            move.x = m_body.velocity.x + playerMoving / Mathf.Abs(playerMoving) * Speed * Time.deltaTime;
+            move.x = Mathf.Clamp(move.x, -mMaxSpeed, mMaxSpeed); // Limit the speed to mMaxSpeed
+            if ((move.x > 0 && !isFacingRight) || (move.x < 0 && isFacingRight))
             {
                 Flip();
             }
@@ -95,11 +114,6 @@ public class playerCtrl : MonoBehaviour
             {
                 m_anim.SetBool("run", false);
             }
-        }
-        if (jump)
-        {
-            numJump++;
-            move.y = mJumpForce * Time.deltaTime;
         }
         m_body.velocity = move;
     }
@@ -118,13 +132,8 @@ public class playerCtrl : MonoBehaviour
 
         m_anim = GetComponent<Animator>();
         m_body = GetComponent<Rigidbody2D>();
-        mJump = false;
-        numJump = 0;
+        mIsJumping = false;
+        mJumpTimes = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

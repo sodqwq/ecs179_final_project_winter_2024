@@ -199,7 +199,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1958100163
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -5817,11 +5817,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_groundRadius: 0.5
+  mBullet: {fileID: 449433367410972687, guid: b93c5f5ea7f0e4617a38cff094151cca, type: 3}
   m_checkLayer:
     serializedVersion: 2
     m_Bits: 1024
-  Speed: 240
-  mJumpForce: 100
+  Speed: 100
+  mMaxSpeed: 10
+  mJumpForce: 10
+  maxJumpTime: 0.47
 --- !u!70 &452885518
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5872,7 +5875,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 9.6
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
