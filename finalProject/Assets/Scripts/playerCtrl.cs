@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Scripting.APIUpdating;
 
 public class playerCtrl : MonoBehaviour
@@ -134,6 +135,20 @@ public class playerCtrl : MonoBehaviour
         m_body = GetComponent<Rigidbody2D>();
         mIsJumping = false;
         mJumpTimes = 0;
+    }
+
+    public int HP = 1;
+    public GameObject ui_gameover;
+    void BeDamaged(int damage)
+    {
+        Debug.Log("BeDamaged");
+        HP -= damage;
+        if(HP <= 0)
+        {
+            Debug.Log("Game Over");
+            Destroy(gameObject);
+            ui_gameover.SetActive(true);
+        }
     }
 
 }
