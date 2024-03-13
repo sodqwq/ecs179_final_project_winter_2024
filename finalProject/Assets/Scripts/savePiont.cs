@@ -29,6 +29,9 @@ public class savePiont : MonoBehaviour
         PlayerPrefs.SetFloat("playerPositionX", transform.position.x);
         PlayerPrefs.SetFloat("playerPositionY", transform.position.y);
         PlayerPrefs.SetFloat("playerPositionZ", transform.position.z);
+        /*PlayerPrefs.SetFloat("CameraPosX", Camera.main.transform.position.x);
+        PlayerPrefs.SetFloat("CameraPosY", Camera.main.transform.position.y);
+        PlayerPrefs.SetFloat("CameraPosZ", Camera.main.transform.position.z);*/
         Debug.Log("Player Position Saved");
         spriteRenderer.sprite  = saveSucess;
     }
