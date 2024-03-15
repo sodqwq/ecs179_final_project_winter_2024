@@ -9,11 +9,15 @@ public class PlayerControl : MonoBehaviour
     public float speed;
     public float jumpSpeed1;
     public float jumpSpeed2;
+
+    public GameWindow gameWindow;
+
     private int jumpCount = 2;
     private Vector3 playerScale;
     private Rigidbody2D playerRigidBody;
     private Animator playerAni;
     private CapsuleCollider2D playerFeet;
+    private bool levelTransitioning = false;
 
     public void InitPlayer()
     {
@@ -99,7 +103,6 @@ public class PlayerControl : MonoBehaviour
     // My guess is that there are some issues with the physical shape after composite
     private void IfOnLand()
     {
-        Debug.Log(playerFeet.IsTouchingLayers(LayerMask.GetMask("Ground")));
         if(playerFeet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             jumpCount = 2;
@@ -115,6 +118,29 @@ public class PlayerControl : MonoBehaviour
             if(jumpCount == 2)
             {
                 jumpCount--;
+            }
+        }
+    }
+
+    // DIE!!!!!!
+    private void OnCollisionEnter2D(Collision2D collision) 
+    {
+        if(levelTransitioning) return;
+
+        if(collision.transform.CompareTag("Trap"))
+        {
+            if(!levelTransitioning) // Check if we're not already transitioning
+            {
+                levelTransitioning = true; // Set the flag
+                gameWindow.GameOver();
+            }
+        }
+        else if (collision.transform.CompareTag("NextLevelSign"))
+        {
+            if(!levelTransitioning) // Check if we're not already transitioning
+            {
+                levelTransitioning = true; // Set the flag
+                gameWindow.NextLevel();
             }
         }
     }
