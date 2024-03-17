@@ -11,6 +11,7 @@ public class PlayerControl : MonoBehaviour
     public float jumpSpeed2;
 
     public GameWindow gameWindow;
+    bool isFacingRight = true;
 
     private int jumpCount = 2;
     private Vector3 playerScale;
@@ -18,6 +19,18 @@ public class PlayerControl : MonoBehaviour
     private Animator playerAni;
     private CapsuleCollider2D playerFeet;
     private bool levelTransitioning = false;
+
+    private int bulletSpeed = 200;
+
+    [SerializeField]
+    private GameObject mBullet;
+    private void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 Scale = transform.localScale;
+        Scale.x *= -1;
+        transform.localScale = Scale;
+    }
 
     public void InitPlayer()
     {
@@ -34,10 +47,20 @@ public class PlayerControl : MonoBehaviour
         Jump();
         Fall();
         IfOnLand();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Debug.Log("Fire1");
+            Vector2 playerPosition = transform.position;
+            int facing = isFacingRight ? 1 : -1;
+            Vector2 bulletPosition = new Vector2((playerPosition.x + facing * 20), playerPosition.y);
+            GameObject bullet = Instantiate(mBullet, bulletPosition, Quaternion.identity);
+            bullet.GetComponent<Rigidbody2D>().velocity = isFacingRight ? new Vector2(bulletSpeed, 0) : new Vector2(-bulletSpeed, 0);
+        }
     }
 
     private void Run()
     {
+        Vector2 move = playerRigidBody.velocity;
         if(Input.GetKey(KeyCode.RightArrow))
         {
             transform.localScale = playerScale;
@@ -54,6 +77,10 @@ public class PlayerControl : MonoBehaviour
         {
             playerRigidBody.velocity = new Vector2(0, playerRigidBody.velocity.y);
             playerAni.SetBool("IfRun", false);
+        }
+        if ((move.x > 0 && !isFacingRight) || (move.x < 0 && isFacingRight))
+        {
+            Flip();
         }
     }
 
@@ -123,7 +150,7 @@ public class PlayerControl : MonoBehaviour
     }
 
     // DIE!!!!!!
-    private void OnCollisionEnter2D(Collision2D collision) 
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if(levelTransitioning) return;
 
