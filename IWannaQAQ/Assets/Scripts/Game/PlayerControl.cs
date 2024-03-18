@@ -54,20 +54,25 @@ public class PlayerControl : MonoBehaviour
             int facing = isFacingRight ? 1 : -1;
             Vector2 bulletPosition = new Vector2((playerPosition.x + facing * 20), playerPosition.y);
             GameObject bullet = Instantiate(mBullet, bulletPosition, Quaternion.identity);
-            bullet.GetComponent<Rigidbody2D>().velocity = isFacingRight ? new Vector2(bulletSpeed, 0) : new Vector2(-bulletSpeed, 0);
+            Bullet bulletScript = bullet.GetComponent<Bullet>();
+            if (bulletScript != null)
+            {
+                bulletScript.Initialize(facing);
+            }
+
         }
     }
 
     private void Run()
     {
         Vector2 move = playerRigidBody.velocity;
-        if(Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.localScale = playerScale;
             playerRigidBody.velocity = new Vector2(speed, playerRigidBody.velocity.y);
             playerAni.SetBool("IfRun", true);
         }
-        else if(Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.localScale = new Vector3(-playerScale.x, playerScale.y, playerScale.z);
             playerRigidBody.velocity = new Vector2(-speed, playerRigidBody.velocity.y);
@@ -86,12 +91,12 @@ public class PlayerControl : MonoBehaviour
 
     private void Jump()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift) && jumpCount != 0)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && jumpCount != 0)
         {
             playerAni.SetBool("IfJump", true);
             playerAni.SetBool("IfFall", false);
             playerAni.SetBool("IfIdle", false);
-            if(jumpCount == 2)
+            if (jumpCount == 2)
             {
                 playerRigidBody.velocity = Vector2.up * jumpSpeed1;
                 jumpCount--;
@@ -102,9 +107,9 @@ public class PlayerControl : MonoBehaviour
                 jumpCount--;
             }
         }
-        else if(Input.GetKeyUp(KeyCode.LeftShift))
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            if(playerRigidBody.velocity.y > 3.0f)
+            if (playerRigidBody.velocity.y > 3.0f)
             {
                 playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, 3f);
             }
@@ -117,7 +122,7 @@ public class PlayerControl : MonoBehaviour
 
     private void Fall()
     {
-        if(playerRigidBody.velocity.y <= 0f)
+        if (playerRigidBody.velocity.y <= 0f)
         {
             playerAni.SetBool("IfFall", true);
             playerAni.SetBool("IfJump", false);
@@ -130,10 +135,10 @@ public class PlayerControl : MonoBehaviour
     // My guess is that there are some issues with the physical shape after composite
     private void IfOnLand()
     {
-        if(playerFeet.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        if (playerFeet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             jumpCount = 2;
-            if(playerAni.GetBool("IfFall")) // Make Sure not Idle when jump
+            if (playerAni.GetBool("IfFall")) // Make Sure not Idle when jump
             {
                 playerAni.SetBool("IfIdle", true);
                 playerAni.SetBool("IfFall", false);
@@ -142,7 +147,7 @@ public class PlayerControl : MonoBehaviour
         else
         {
             // If leave ground without jump, jumpCount-- still
-            if(jumpCount == 2)
+            if (jumpCount == 2)
             {
                 jumpCount--;
             }
@@ -154,6 +159,8 @@ public class PlayerControl : MonoBehaviour
     {
         if (Time.time - lastCollisionTime < debounceTime) return; // Debounce collisions
         lastCollisionTime = Time.time; // Update the time of the last collision
+        Debug.Log("Player Collision with " + collision.transform.name + " Tag: " + collision.transform.tag);
+        if (levelTransitioning) return;
 
         if (collision.transform.CompareTag("Trap"))
         {
@@ -163,6 +170,22 @@ public class PlayerControl : MonoBehaviour
         {
             Debug.Log("qwq");
             gameWindow.NextLevel();
+        }
+        else if (collision.transform.CompareTag("Enemy"))
+        {
+            Debug.Log("Player Collision with Enemy");
+            levelTransitioning = true; // Set the flag
+            gameWindow.GameOver();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Player Trigger with " + other.transform.name + " Tag: " + other.transform.tag);
+        if (other.tag == "Enemy")
+        {
+            Debug.Log("Player Trigger with Enemy");
+            gameWindow.GameOver();
         }
     }
 }
