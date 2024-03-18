@@ -50,10 +50,11 @@ public class PlayerControl : MonoBehaviour
         IfOnLand();
         if (Input.GetButtonDown("Fire1"))
         {
-            Vector2 playerPosition = transform.position;
+            Vector3 playerPosition = transform.position;
             int facing = isFacingRight ? 1 : -1;
-            Vector2 bulletPosition = new Vector2((playerPosition.x + facing * 20), playerPosition.y);
+            Vector3 bulletPosition = new Vector3((playerPosition.x + facing * 20), playerPosition.y, playerPosition.z);
             GameObject bullet = Instantiate(mBullet, bulletPosition, Quaternion.identity);
+            bullet.transform.parent = transform.parent;
             Bullet bulletScript = bullet.GetComponent<Bullet>();
             if (bulletScript != null)
             {
@@ -160,7 +161,6 @@ public class PlayerControl : MonoBehaviour
         if (Time.time - lastCollisionTime < debounceTime) return; // Debounce collisions
         lastCollisionTime = Time.time; // Update the time of the last collision
         Debug.Log("Player Collision with " + collision.transform.name + " Tag: " + collision.transform.tag);
-        if (levelTransitioning) return;
 
         if (collision.transform.CompareTag("Trap"))
         {
@@ -174,7 +174,6 @@ public class PlayerControl : MonoBehaviour
         else if (collision.transform.CompareTag("Enemy"))
         {
             Debug.Log("Player Collision with Enemy");
-            levelTransitioning = true; // Set the flag
             gameWindow.GameOver();
         }
     }

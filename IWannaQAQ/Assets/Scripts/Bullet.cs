@@ -8,10 +8,11 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
 
     // Start is called before the first frame update
-    // void Start()
-    // {
-    //     Debug.Log("Bullet Start");
-    // }
+    void Start()
+    {
+        Debug.Log("Bullet Start");
+        GetComponent<SpriteRenderer>().enabled = true;
+    }
 
     public void Initialize(int direction)
     {
