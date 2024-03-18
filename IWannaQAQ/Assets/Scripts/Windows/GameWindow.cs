@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class GameWindow : WindowRoot
@@ -8,6 +9,8 @@ public class GameWindow : WindowRoot
     public GameObject gameOverTip;
     public Transform startPoint;
     public GameObject[] levelArr;
+
+    //public GameObject[] savePointArr;
     private int levelCount;
     public SavePoint initialSavePoint;
 
@@ -24,38 +27,44 @@ public class GameWindow : WindowRoot
         player.SetActive(true);
         gameOverTip.SetActive(false);
     }
-
+    private void OnApplicationQuit() 
+    {
+        PlayerPrefs.SetInt("LastSavePoint", -1); 
+    }
     private void LoadLevel()
     {
         GameObject level = Instantiate(levelArr[levelCount]);
         level.name = "Level" + levelCount;
         level.transform.SetParent(transform, false);
 
-        player.transform.localPosition = level.transform.Find("StartPoint").localPosition;
-
-        // int lastSavePointId = PlayerPrefs.GetInt("LastSavePoint", -1); // get the last save point
-        // if (lastSavePointId != -1)
-        // {
-        //     SavePoint[] allSavePoints = FindObjectsOfType<SavePoint>(); 
-        //     GameObject player = GameObject.FindWithTag("Player"); 
-        //     foreach (var savePoint in allSavePoints)
-        //     {
-        //         if (savePoint.id == levelCount) // check if the save point is in the current level
-        //         {
-        //             //SavePoint.LoadPlayerPosition(player); // 
-        //             float x = PlayerPrefs.GetFloat("playerPositionX");
-        //             float y = PlayerPrefs.GetFloat("playerPositionY");
-        //             float z = PlayerPrefs.GetFloat("playerPositionZ");
-        //             player.transform.localPosition = new Vector3(x, y, z);
-        //             break; 
-        //         }
-        //     }
-        // }
-        // else
-        // {
-        //     player.transform.localPosition = level.transform.Find("StartPoint").localPosition;
-
-        // }
+        //player.transform.localPosition = level.transform.Find("StartPoint").localPosition;
+        int savepoint = PlayerPrefs.GetInt("LastSavePoint");
+        if (savepoint!= -1)
+        {
+            
+            player.transform.localPosition = level.transform.Find("Save_" + savepoint).localPosition;
+            /*SavePoint[] allSavePoints = FindObjectsOfType<SavePoint>(); 
+            GameObject player = GameObject.FindWithTag("Player"); 
+            foreach (var savePoint in allSavePoints)
+            {
+                if (savePoint.id == levelCount) // check if the save point is in the current level
+                {
+                    //SavePoint.LoadPlayerPosition(player);  
+                    float x = PlayerPrefs.GetFloat("playerPositionX");
+                    float y = PlayerPrefs.GetFloat("playerPositionY");
+                    float z = PlayerPrefs.GetFloat("playerPositionZ");
+                    player.transform.position = new Vector3(x, y, z);
+                    //player.transform.
+                    Debug.Log("LoadPlayerPosition");
+                    break; 
+                }
+            }*/
+        }
+        else
+        {
+            player.transform.localPosition = level.transform.Find("StartPoint").localPosition;
+            Debug.Log("StartPoint");
+        }
     }
 
     private void DeleteLevel()

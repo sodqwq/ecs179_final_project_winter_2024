@@ -7,18 +7,24 @@ public class SavePoint : MonoBehaviour
     public int id; 
     private SpriteRenderer spriteRenderer;
 
+    private float playerPositionX;
+    private float playerPositionY;
+    private float playerPositionZ;
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Beshot()
-    {
-        SavePlayerPosition();
-        // save the last save point
+    {   
+        int lastSavePoint = PlayerPrefs.GetInt("LastSavePoint");
         PlayerPrefs.SetInt("LastSavePoint", id); 
-
-        spriteRenderer.sprite = saveSuccess;
+        // save the data
+        if(lastSavePoint != id)
+        {
+            spriteRenderer.sprite = saveSuccess;
+        }
+        //spriteRenderer.sprite = saveSuccess;
     }
 
     void SavePlayerPosition()
