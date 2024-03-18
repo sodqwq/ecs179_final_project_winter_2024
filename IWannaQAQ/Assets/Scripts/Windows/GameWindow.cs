@@ -11,6 +11,7 @@ public class GameWindow : WindowRoot
     public GameObject[] levelArr;
 
     //public GameObject[] savePointArr;
+    public GameObject heroKnight;
     private int levelCount;
     public SavePoint initialSavePoint;
 
@@ -27,9 +28,9 @@ public class GameWindow : WindowRoot
         player.SetActive(true);
         gameOverTip.SetActive(false);
     }
-    private void OnApplicationQuit() 
+    private void OnApplicationQuit()
     {
-        PlayerPrefs.SetInt("LastSavePoint", -1); 
+        PlayerPrefs.SetInt("LastSavePoint", -1);
     }
     private void LoadLevel()
     {
@@ -39,9 +40,9 @@ public class GameWindow : WindowRoot
 
         //player.transform.localPosition = level.transform.Find("StartPoint").localPosition;
         int savepoint = PlayerPrefs.GetInt("LastSavePoint");
-        if (savepoint!= -1)
+        if (savepoint != -1)
         {
-            
+
             player.transform.localPosition = level.transform.Find("Save_" + savepoint).localPosition;
             /*SavePoint[] allSavePoints = FindObjectsOfType<SavePoint>(); 
             GameObject player = GameObject.FindWithTag("Player"); 
@@ -88,7 +89,7 @@ public class GameWindow : WindowRoot
 
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             Restart();
         }
