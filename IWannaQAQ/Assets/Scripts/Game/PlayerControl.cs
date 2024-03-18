@@ -18,7 +18,8 @@ public class PlayerControl : MonoBehaviour
     private Rigidbody2D playerRigidBody;
     private Animator playerAni;
     private CapsuleCollider2D playerFeet;
-    private bool levelTransitioning = false;
+    private float debounceTime = 0.5f; // Time to wait before allowing another collision
+    private float lastCollisionTime = -1; // Time of the last collision
 
     private int bulletSpeed = 200;
 
@@ -49,7 +50,6 @@ public class PlayerControl : MonoBehaviour
         IfOnLand();
         if (Input.GetButtonDown("Fire1"))
         {
-            Debug.Log("Fire1");
             Vector2 playerPosition = transform.position;
             int facing = isFacingRight ? 1 : -1;
             Vector2 bulletPosition = new Vector2((playerPosition.x + facing * 20), playerPosition.y);
@@ -152,23 +152,17 @@ public class PlayerControl : MonoBehaviour
     // DIE!!!!!!
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(levelTransitioning) return;
+        if (Time.time - lastCollisionTime < debounceTime) return; // Debounce collisions
+        lastCollisionTime = Time.time; // Update the time of the last collision
 
-        if(collision.transform.CompareTag("Trap"))
+        if (collision.transform.CompareTag("Trap"))
         {
-            if(!levelTransitioning) // Check if we're not already transitioning
-            {
-                levelTransitioning = true; // Set the flag
-                gameWindow.GameOver();
-            }
+            gameWindow.GameOver();
         }
         else if (collision.transform.CompareTag("NextLevelSign"))
         {
-            if(!levelTransitioning) // Check if we're not already transitioning
-            {
-                levelTransitioning = true; // Set the flag
-                gameWindow.NextLevel();
-            }
+            Debug.Log("qwq");
+            gameWindow.NextLevel();
         }
     }
 }

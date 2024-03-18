@@ -14,11 +14,9 @@ public class SavePoint : MonoBehaviour
 
     void Beshot()
     {
-        Debug.Log("When shot, save point is called");
         SavePlayerPosition();
         // save the last save point
         PlayerPrefs.SetInt("LastSavePoint", id); 
-        Debug.Log($"Player Position Saved at Save Point: {id}");
 
         spriteRenderer.sprite = saveSuccess;
     }
@@ -41,7 +39,6 @@ public class SavePoint : MonoBehaviour
             float y = PlayerPrefs.GetFloat("playerPositionY");
             float z = PlayerPrefs.GetFloat("playerPositionZ");
             player.transform.position = new Vector3(x, y, z);
-            Debug.Log("Player Position Loaded");
         }
         else
         {
