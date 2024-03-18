@@ -827,8 +827,8 @@ Transform:
   m_GameObject: {fileID: 522635710}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -390.2, y: -174.7, z: 0}
-  m_LocalScale: {x: 89.20897, y: 89.29017, z: 3.76931}
+  m_LocalPosition: {x: -373.8, y: -174.2, z: 0}
+  m_LocalScale: {x: 26.403614, y: 26.427645, z: 1.1156211}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 673972852}
@@ -874,7 +874,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bdc06763c1dd71d489e7c329114fcbb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9f68e3f89f882a45a4205ab23102d08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -962,7 +962,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.04, y: 0.04}
+    oldSize: {x: 0.3, y: 0.29}
     newSize: {x: 0.04, y: 0.04}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1173,11 +1173,7 @@ RectTransform:
   - {fileID: 2081084847}
   - {fileID: 1083406789}
   - {fileID: 522635711}
-<<<<<<< HEAD
-=======
   - {fileID: 948549753}
-  - {fileID: 1427853561}
->>>>>>> 98fe921 (Added enemy)
   m_Father: {fileID: 770484722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1203,10 +1199,8 @@ MonoBehaviour:
   levelArr:
   - {fileID: 1016545523107282168, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
   - {fileID: 4610209884189917198, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
-  initialSavePoint: {fileID: 0}
-  - {fileID: 3480390714199444888}
-  - {fileID: 8236840258111398745}
   heroKnight: {fileID: 948549747}
+  initialSavePoint: {fileID: 0}
 --- !u!1 &682385705
 GameObject:
   m_ObjectHideFlags: 0
@@ -3234,7 +3228,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1427853561}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1066605489837989131, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
       propertyPath: m_IsActive
@@ -3619,7 +3613,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1427853561}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1016545523107282168, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
       propertyPath: m_Name
@@ -3735,31 +3729,6 @@ TilemapCollider2D:
   m_CorrespondingSourceObject: {fileID: 8067369131650738331, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
   m_PrefabInstance: {fileID: 1012907320352597060}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3480390714199444888 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1016545523107282168, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
-  m_PrefabInstance: {fileID: 2371700032292321838}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &3826887864085265111 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5573273894040064703, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
-  m_PrefabInstance: {fileID: 1012907320352597060}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6361212231799048985 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2584694609314142400, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
-  m_PrefabInstance: {fileID: 2371700032292321838}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8236840258111398745 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4610209884189917198, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
-  m_PrefabInstance: {fileID: 1012907320352597060}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &8581644567613199382 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2130360058058655545, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
-  m_PrefabInstance: {fileID: 2371700032292321838}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3769,3 +3738,5 @@ SceneRoots:
   - {fileID: 1855356787}
   - {fileID: 1822856177}
   - {fileID: 2093160214}
+  - {fileID: 1012907320352597060}
+  - {fileID: 2371700032292321838}
