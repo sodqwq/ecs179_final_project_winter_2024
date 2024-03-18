@@ -1822,9 +1822,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ad5ff5b1df4ae40a1723e707aedf5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 150
-  jumpSpeed1: 400
-  jumpSpeed2: 300
+  speed: 170
+  jumpSpeed1: 500
+  jumpSpeed2: 350
   gameWindow: {fileID: 673972853}
   mBullet: {fileID: 522635710}
 --- !u!95 &1083406795
