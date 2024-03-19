@@ -523,6 +523,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6323719953710832613, guid: a4b4a6d32bcb19248a754d6602ffc7e4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323719953710832613, guid: a4b4a6d32bcb19248a754d6602ffc7e4, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -1890,8 +1894,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00007557488, y: -0.16544169}
-  m_Size: {x: 0.14740889, y: 0.01578999}
+  m_Offset: {x: 0.0000002874592, y: -0.16100647}
+  m_Size: {x: 0.13238199, y: 0.011201632}
   m_Direction: 1
 --- !u!61 &1083406791
 BoxCollider2D:
@@ -1902,7 +1906,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1083406788}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: c0f54a0e1855eff459e183d41036077b, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -1922,7 +1926,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0032403618, y: -0.045363642}
@@ -1954,7 +1958,7 @@ Rigidbody2D:
   m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 70
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c0f54a0e1855eff459e183d41036077b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3244,7 +3248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4610209884189917198, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4900527705798749038, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3336,7 +3340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5671170325874608288, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
       propertyPath: m_ColliderPaths.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5671170325874608288, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_Collider
@@ -3619,6 +3623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level1
       objectReference: {fileID: 0}
+    - target: {fileID: 1016545523107282168, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2130360058058655545, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3717,7 +3725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8350993317007273690, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
       propertyPath: m_ColliderPaths.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

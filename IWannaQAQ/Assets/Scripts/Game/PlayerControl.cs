@@ -160,7 +160,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (Time.time - lastCollisionTime < debounceTime) return; // Debounce collisions
         lastCollisionTime = Time.time; // Update the time of the last collision
-        Debug.Log("Player Collision with " + collision.transform.name + " Tag: " + collision.transform.tag);
+        // Debug.Log("Player Collision with " + collision.transform.name + " Tag: " + collision.transform.tag);
 
         if (collision.transform.CompareTag("Trap"))
         {
@@ -171,19 +171,14 @@ public class PlayerControl : MonoBehaviour
             Debug.Log("qwq");
             gameWindow.NextLevel();
         }
-        else if (collision.transform.CompareTag("Enemy"))
-        {
-            Debug.Log("Player Collision with Enemy");
-            gameWindow.GameOver();
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Player Trigger with " + other.transform.name + " Tag: " + other.transform.tag);
+        // Debug.Log("Player Trigger with " + other.transform.name + " Tag: " + other.transform.tag);
         if (other.tag == "Enemy")
         {
-            Debug.Log("Player Trigger with Enemy");
+            // Debug.Log("Player Trigger with Enemy");
             gameWindow.GameOver();
         }
     }

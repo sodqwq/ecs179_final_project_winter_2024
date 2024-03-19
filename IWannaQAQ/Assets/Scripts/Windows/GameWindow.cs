@@ -10,7 +10,6 @@ public class GameWindow : WindowRoot
     public Transform startPoint;
     public GameObject[] levelArr;
 
-    //public GameObject[] savePointArr;
     public GameObject heroKnight;
     private int levelCount;
     public SavePoint initialSavePoint;
@@ -97,7 +96,6 @@ public class GameWindow : WindowRoot
 
     public void Restart()
     {
-        // Debug.Log("level count: " + levelCount);
         GameStart();
         DeleteLevel();
         LoadLevel();
