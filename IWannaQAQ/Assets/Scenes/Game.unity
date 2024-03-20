@@ -3603,6 +3603,14 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[2].Array.data[11].Y
       value: 400000000
       objectReference: {fileID: 0}
+    - target: {fileID: 5894955044359902855, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894955044359902855, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c0360ab6478d334daadbbfc8200d292, type: 3}
     - target: {fileID: 7603075689944576978, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -3708,6 +3716,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3890743809198664529, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890743809198664529, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3787022d41bc0414eb6a3a15eb0f3dc3, type: 3}
     - target: {fileID: 5104675949343563274, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
       propertyPath: m_Layer
       value: 7
