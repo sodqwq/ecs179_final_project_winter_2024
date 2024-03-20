@@ -73,10 +73,15 @@
     <Compile Include="Assets\Scripts\Service\ResSvc.cs" />
     <Compile Include="Assets\Scripts\Windows\StartWindow.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Common\HorizontalMove.cs" />
     <Compile Include="Assets\Scripts\GameRoot.cs" />
     <Compile Include="Assets\Scripts\Game\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\Common\AutoMove2.cs" />
     <Compile Include="Assets\Resources\Enemy\Hero Knight - Pixel Art\Demo\Sensor_HeroKnight.cs" />
+    <Compile Include="Assets\Scripts\Common\MovingDown.cs" />
+    <Compile Include="Assets\Scripts\Common\AutoMove.cs" />
     <Compile Include="Assets\Scripts\Common\WindowRoot.cs" />
+    <Compile Include="Assets\Scripts\Common\HorizontalMoveRight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Data\saveData.xml" />
