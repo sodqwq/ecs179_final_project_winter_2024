@@ -75,6 +75,7 @@
     <Compile Include="Assets/Scripts/Common/AutoMove2.cs" />
     <Compile Include="Assets/Resources/Enemy/Hero Knight - Pixel Art/Demo/Sensor_HeroKnight.cs" />
     <Compile Include="Assets/Scripts/Common/MovingDown.cs" />
+    <Compile Include="Assets/Scripts/Common/AutoMove.cs" />
     <Compile Include="Assets/Scripts/Common/WindowRoot.cs" />
     <Compile Include="Assets/Scripts/Common/HorizontalMoveRight.cs" />
   </ItemGroup>
