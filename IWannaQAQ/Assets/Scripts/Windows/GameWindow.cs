@@ -41,8 +41,18 @@ public class GameWindow : WindowRoot
         int savepoint = PlayerPrefs.GetInt("LastSavePoint");
         if (savepoint != -1)
         {
-
+            if(levelCount> 0&&savepoint<2)
+            {
+                savepoint = 2;
+                player.transform.localPosition = level.transform.Find("StartPoint").localPosition;
+                
+            }
+            else if (levelCount>1&&savepoint<3)
+            { 
+                savepoint = 3;
+            }
             player.transform.localPosition = level.transform.Find("Save_" + savepoint).localPosition;
+
             /*SavePoint[] allSavePoints = FindObjectsOfType<SavePoint>(); 
             GameObject player = GameObject.FindWithTag("Player"); 
             foreach (var savePoint in allSavePoints)
