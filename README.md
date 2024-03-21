@@ -49,6 +49,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 ## User Interface and Input
 
 **Our User Interface includes basic start screen, a place to load your saved data after entering and a replay interface when player dies. We made the UI characters 2D retro style so they can fit to the style of our game.**
+
 **Since this is a 2D side-scrolling game, all we need is player to move and jump. We set up 2 sets of input settings(demonstrated above), also consider the difficulty of the game, we allow players to shoot the save points to save their progress
 instead of touching them. We are so nice aren't we?**
 
