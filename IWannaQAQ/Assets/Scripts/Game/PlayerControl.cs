@@ -20,7 +20,7 @@ public class PlayerControl : MonoBehaviour
     private CapsuleCollider2D playerFeet;
     private float debounceTime = 0.5f; // Time to wait before allowing another collision
     private float lastCollisionTime = -1; // Time of the last collision
-
+    private AudioSource audioSource; // Reference to the audio source component
     private int bulletSpeed = 200;
 
     [SerializeField]
@@ -31,6 +31,12 @@ public class PlayerControl : MonoBehaviour
         Vector3 Scale = transform.localScale;
         Scale.x *= -1;
         transform.localScale = Scale;
+    }
+
+    private void Start()
+    {
+        InitPlayer();
+        audioSource = GetComponent<AudioSource>(); // Initialize the audio source component
     }
 
     public void InitPlayer()
@@ -61,6 +67,10 @@ public class PlayerControl : MonoBehaviour
             if (bulletScript != null)
             {
                 bulletScript.Initialize(facing);
+            }
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
             }
 
         }

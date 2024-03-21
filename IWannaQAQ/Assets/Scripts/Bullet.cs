@@ -10,13 +10,13 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Bullet Start");
+        // Debug.Log("Bullet Start");
         GetComponent<SpriteRenderer>().enabled = true;
     }
 
     public void Initialize(int direction)
     {
-        Debug.Log("Bullet Initialize");
+        // Debug.Log("Bullet Initialize");
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(speed * direction, 0);
     }

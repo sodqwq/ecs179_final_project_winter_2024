@@ -13,6 +13,7 @@ public class GameWindow : WindowRoot
     public GameObject heroKnight;
     private int levelCount;
     public SavePoint initialSavePoint;
+    public StartWindow startWindow;
 
     protected override void InitWindow()
     {
@@ -33,6 +34,10 @@ public class GameWindow : WindowRoot
     }
     private void LoadLevel()
     {
+        Debug.Log(levelCount);
+        if(levelCount > 3){
+            levelCount = 0;
+        }
         GameObject level = Instantiate(levelArr[levelCount]);
         level.name = "Level" + levelCount;
         level.transform.SetParent(transform, false);
@@ -63,7 +68,7 @@ public class GameWindow : WindowRoot
         else
         {
             player.transform.localPosition = level.transform.Find("StartPoint").localPosition;
-            Debug.Log("StartPoint");
+            // Debug.Log("StartPoint");
         }
     }
 
@@ -93,6 +98,10 @@ public class GameWindow : WindowRoot
         {
             Restart();
         }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitGame();
+        }
     }
 
     public void Restart()
@@ -100,5 +109,11 @@ public class GameWindow : WindowRoot
         GameStart();
         DeleteLevel();
         LoadLevel();
+    }
+
+    private void ExitGame()
+    {
+        SetWindowState(false);
+        startWindow.SetWindowState(true);
     }
 }

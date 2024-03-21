@@ -28,7 +28,7 @@ public class HorizontalMoveRight : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log($"Collided with {collision.gameObject.name}");
+        // Debug.Log($"Collided with {collision.gameObject.name}");
 
         // 只有当计时器到达0，并且碰撞的是"Pit"时才会改变方向
         if ((collision.gameObject.tag == "Pit" && changeDirectionTimer <= 0) || collision.gameObject.tag == "Ground")
@@ -44,7 +44,7 @@ public class HorizontalMoveRight : MonoBehaviour
             {
                 spriteRenderer.flipX = !movingLeft;
             }
-            Debug.Log($"Direction changed: {(movingLeft ? "Moving Left" : "Moving Right")}, New velocity: {rb.velocity}");
+            // Debug.Log($"Direction changed: {(movingLeft ? "Moving Left" : "Moving Right")}, New velocity: {rb.velocity}");
         }
     }
 }

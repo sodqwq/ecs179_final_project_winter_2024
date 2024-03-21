@@ -27,7 +27,7 @@ public class HorizontalMove : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log($"Collided with {collision.gameObject.name}");
+        // Debug.Log($"Collided with {collision.gameObject.name}");
 
         if ((collision.gameObject.tag == "Pit" && changeDirectionTimer <= 0) || collision.gameObject.tag == "Ground")
         {
@@ -43,7 +43,7 @@ public class HorizontalMove : MonoBehaviour
             if (spriteRenderer != null)
             {
                 spriteRenderer.flipX = !movingLeft;
-                Debug.Log("Sprite Flipped");
+                // Debug.Log("Sprite Flipped");
             }
             else
             {

@@ -9,6 +9,7 @@ public class RecordWindow : WindowRoot
     public PlayerControl playerController;
     public GameObject[] dataArr;
     public GameWindow gameWindow;
+    public StartWindow startWindow;
     [HideInInspector]
     public int dataChooseNum;   // Don't want to show in inspector
 
@@ -36,6 +37,11 @@ public class RecordWindow : WindowRoot
     {
         ChangeChoose();
         EnterGame();
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitGame();
+        }
+        
     }
 
     private void ChangeChoose()
@@ -64,5 +70,10 @@ public class RecordWindow : WindowRoot
             SetWindowState(false);
             gameWindow.SetWindowState(true);
         }
+    }
+    private void ExitGame()
+    {
+        SetWindowState(false);
+        startWindow.SetWindowState(true);
     }
 }
