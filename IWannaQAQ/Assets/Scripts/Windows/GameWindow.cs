@@ -113,6 +113,7 @@ public class GameWindow : WindowRoot
 
     private void ExitGame()
     {
+        DeleteLevel();
         SetWindowState(false);
         startWindow.SetWindowState(true);
     }
