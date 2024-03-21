@@ -1202,8 +1202,8 @@ MonoBehaviour:
   startPoint: {fileID: 0}
   levelArr:
   - {fileID: 1016545523107282168, guid: 88b73631ecd60c1448281ae6e3fc3af7, type: 3}
-  - {fileID: 4610209884189917198, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
   - {fileID: 4610209884189917198, guid: a56dc37cd50e85a4a852f0fe583c7f46, type: 3}
+  - {fileID: 4610209884189917198, guid: a8af2b1856f5a0540a43d07a14dee285, type: 3}
   heroKnight: {fileID: 948549747}
   initialSavePoint: {fileID: 0}
 --- !u!1 &682385705
