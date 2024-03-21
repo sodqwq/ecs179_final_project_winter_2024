@@ -3883,7 +3883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveSuccess: {fileID: 21300000, guid: 7abeea3f1aa2f7d4e8822fee4c1733a6, type: 3}
-  id: 3
+  id: 2
 --- !u!1001 &2789403718334809780
 PrefabInstance:
   m_ObjectHideFlags: 0
