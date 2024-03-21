@@ -43,9 +43,21 @@ Here is an example:
 You should replay any **bold text** with your relevant information. Liberally use the template when necessary and appropriate.
 
 ## Producer
+## Name: Lin Zhu
+## Email: lnpzhu@ucdavis.edu
+**For our game to run smoothly, it's crucial that our producers are both proactive and communicative to ensure all game components work together seamlessly, minimizing merge errors on GitHub. Additionally, the producer needs to manage the team members' workload effectively. I make it a priority to schedule tasks for everyone while maintaining flexibility, allowing our games to run more smoothly and be completed on time.
 
-**Describe the steps you took in your role as producer. Typical items include group scheduling mechanisms, links to meeting notes, descriptions of team logistics problems with their resolution, project organization tools (e.g., timelines, dependency/task tracking, Gantt charts, etc.), and repository management methodology.**
+GitHub:
 
+To prevent merge errors, I assign team members to work on their own scenes, and together, we merge all changes into the main scene. I take primary responsibility for handling pull requests, ensuring the code functions correctly, and managing merge errors. Furthermore, I've organized the project's assets into Unity folders, including scripts and audio, to improve organization.
+
+Meeting:
+
+To enhance efficiency and communication, I've set up a Discord server for our team, featuring multiple channels to outline links, roles, and goals. Over several weeks, we've conducted numerous meetings using this Discord server. To organize these meetings, I've created a meeting sheet to record the times and everyone's progress on tasks, available here: https://docs.google.com/spreadsheets/d/1LMZtTGkEsrY30iUUHjTyAvzNhGUfZH5FAmNbdq0FOLI/edit?usp=sharing.
+
+We ensure that tasks are clearly defined during development and maintain a Discord group chat for daily, prompt communication. This method is effective for us as few issues or decisions require everyone's collaboration. We've found that everyone is available on weekends, so we hold weekly meetings via Zoom then. Additionally, I organize more meetings as deadlines approach.
+
+Other responsibilities include participating in enemy design and implementing the enemy's mobile attack and death. I also create character bullets and implement shooting functions.**
 ## User Interface and Input
 
 **Our User Interface includes basic start screen, a place to load your saved data after entering and a replay interface when player dies. We made the UI characters 2D retro style so they can fit to the style of our game.**
