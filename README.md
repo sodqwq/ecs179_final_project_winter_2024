@@ -42,10 +42,10 @@ Here is an example:
 
 You should replay any **bold text** with your relevant information. Liberally use the template when necessary and appropriate.
 
-## Producer
-## Name: Lin Zhu
-## Email: lnpzhu@ucdavis.edu
-**For our game to run smoothly, it's crucial that our producers are both proactive and communicative to ensure all game components work together seamlessly, minimizing merge errors on GitHub. Additionally, the producer needs to manage the team members' workload effectively. I make it a priority to schedule tasks for everyone while maintaining flexibility, allowing our games to run more smoothly and be completed on time.
+## Producer - Lin Zhu
+**Email: lnpzhu@ucdavis.edu
+
+For our game to run smoothly, it's crucial that our producers are both proactive and communicative to ensure all game components work together seamlessly, minimizing merge errors on GitHub. Additionally, the producer needs to manage the team members' workload effectively. I make it a priority to schedule tasks for everyone while maintaining flexibility, allowing our games to run more smoothly and be completed on time.
 
 GitHub:
 
