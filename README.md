@@ -2,7 +2,7 @@
 
 ## Summary ##
 
-**IWannaQAQ is a 2D side-scrolling video game that challenges both your reaction and your keyboard using ability. Our game was inspired by the game "I Wanna be the guy", a challenging side-scrolling game famous for it's unexpected traps
+**IWannaQAQ is a 2D side-scrolling game that challenges both your reaction and your keyboard using ability. Our game was inspired by the game "I Wanna be the guy", a challenging side-scrolling game famous for it's unexpected traps
 and sudden death. After playing "I Wanna be the guy", our team decide to build our own I wanna series. Thus, this game is born. As the suffix QAQ(a crying face) indicates, this game is not a game that you can pass when lying on a sofa. Our
 goal is to provide you a challenge, and the sense of accomplishment. Be patient, and enjoy.**
 
@@ -48,10 +48,11 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 ## User Interface and Input
 
-**Describe your user interface and how it relates to gameplay. This can be done via the template.**
-**Describe the default input configuration.**
+**Our User Interface includes basic start screen, a place to load your saved data after entering and a replay interface when player dies. We made the UI characters 2D retro style so they can fit to the style of our game.**
+**Since this is a 2D side-scrolling game, all we need is player to move and jump. We set up 2 sets of input settings(demonstrated above), also consider the difficulty of the game, we allow players to shoot the save points to save their progress
+instead of touching them. We are so nice aren't we?**
 
-**Add an entry for each platform or input style your project supports.**
+**For now our project only supports keyboard and mouse input**
 
 ## Movement/Physics
 
