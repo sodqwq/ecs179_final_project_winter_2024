@@ -41,17 +41,6 @@ public class GameWindow : WindowRoot
         int savepoint = PlayerPrefs.GetInt("LastSavePoint");
         if (savepoint != -1)
         {
-            if(levelCount == 2)
-            {
-                savepoint = 2;
-                player.transform.localPosition = level.transform.Find("StartPoint").localPosition;
-                
-            }
-            if (levelCount == 3)
-            { 
-                savepoint = 5;
-            }
-
             player.transform.localPosition = level.transform.Find("Save_" + savepoint).localPosition;
 
             /*SavePoint[] allSavePoints = FindObjectsOfType<SavePoint>(); 
@@ -87,6 +76,7 @@ public class GameWindow : WindowRoot
     {
         DeleteLevel();
         levelCount++;
+        PlayerPrefs.SetInt("LastSavePoint", 1); 
         LoadLevel();
         
     }
