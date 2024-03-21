@@ -44,6 +44,10 @@ public class GameWindow : WindowRoot
 
         //player.transform.localPosition = level.transform.Find("StartPoint").localPosition;
         int savepoint = PlayerPrefs.GetInt("LastSavePoint");
+        if(levelCount == 0)
+        {
+            savepoint = 1;
+        }
         if (savepoint != -1)
         {
             player.transform.localPosition = level.transform.Find("Save_" + savepoint).localPosition;
