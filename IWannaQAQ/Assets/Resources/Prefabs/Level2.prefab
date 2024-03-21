@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2645011820698918956}
   - component: {fileID: 5563839793432166987}
   m_Layer: 0
-  m_Name: Save_4
+  m_Name: Save_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1578,7 +1578,7 @@ GameObject:
   - component: {fileID: 233329834700528713}
   - component: {fileID: 7757122701986714422}
   m_Layer: 0
-  m_Name: Save_2
+  m_Name: Save_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1606,7 +1606,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3862410413432658316}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3751,7 +3751,7 @@ GameObject:
   - component: {fileID: 8369741495817621250}
   - component: {fileID: 1868299906025874063}
   m_Layer: 0
-  m_Name: Save_3
+  m_Name: Save_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
