@@ -500,16 +500,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 10, y: 16, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 12
-      m_TileSpriteIndex: 12
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
@@ -536,8 +526,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 01a28b30185fe594f9a75dda411a708a, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 3e0db46e8069d2b479827df855d1cab5, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 271a0c2d5834365459f0433f3b2b57e2, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: fb4227ddd03b21244a6f7415f9a3b89b, type: 2}
   m_TileSpriteArray:
@@ -565,12 +555,12 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: e8b4400ce6273004bb29a1901ee24935, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 477a705ac62ed614d86fbff7322cc0e0, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 62f5d25b488512947b720f7de4ed3fa0, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: e5e8a2fb977a2cd4689cb448f6eda634, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 32
+  - m_RefCount: 31
     m_Data:
       e00: 1
       e01: 0
@@ -589,7 +579,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 32
+  - m_RefCount: 31
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -766,20 +756,6 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 8067369131650738331}
     m_ColliderPaths:
-    - - X: 4331250176
-        Y: 6474999808
-      - X: 4331250176
-        Y: 6750000128
-      - X: 4193750016
-        Y: 6750000128
-      - X: 4131249920
-        Y: 6737500160
-      - X: 4068750080
-        Y: 6700000256
-      - X: 4068750080
-        Y: 6449999872
-      - X: 4306250240
-        Y: 6449999872
     - - X: 3931249920
         Y: 6074999808
       - X: 3931249920
@@ -1176,13 +1152,6 @@ CompositeCollider2D:
         Y: 400000000
   m_CompositePaths:
     m_Paths:
-    - - {x: 433.12503, y: 647.5}
-      - {x: 433.12503, y: 675}
-      - {x: 419.375, y: 675}
-      - {x: 413.125, y: 673.75}
-      - {x: 406.875, y: 670.00006}
-      - {x: 406.875, y: 645}
-      - {x: 430.62503, y: 645}
     - - {x: 393.125, y: 607.5}
       - {x: 393.125, y: 635}
       - {x: 379.375, y: 635}
@@ -3723,7 +3692,7 @@ Transform:
   m_GameObject: {fileID: 7581016337108489159}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 431, y: 314, z: 0}
+  m_LocalPosition: {x: 437.3, y: 120.3, z: 0}
   m_LocalScale: {x: 76, y: 76, z: 76}
   m_ConstrainProportionsScale: 0
   m_Children: []

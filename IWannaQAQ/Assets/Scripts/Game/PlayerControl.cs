@@ -48,11 +48,11 @@ public class PlayerControl : MonoBehaviour
         Jump();
         Fall();
         IfOnLand();
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Z))
         {
             Vector3 playerPosition = transform.position;
             int facing = isFacingRight ? 1 : -1;
-            Vector3 bulletPosition = new Vector3((playerPosition.x + facing * 20), playerPosition.y, playerPosition.z);
+            Vector3 bulletPosition = new Vector3(playerPosition.x + facing * 20, playerPosition.y, playerPosition.z);
             GameObject bullet = Instantiate(mBullet, bulletPosition, Quaternion.identity);
             bullet.transform.parent = transform.parent;
             Bullet bulletScript = bullet.GetComponent<Bullet>();
@@ -67,13 +67,13 @@ public class PlayerControl : MonoBehaviour
     private void Run()
     {
         Vector2 move = playerRigidBody.velocity;
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             transform.localScale = playerScale;
             playerRigidBody.velocity = new Vector2(speed, playerRigidBody.velocity.y);
             playerAni.SetBool("IfRun", true);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             transform.localScale = new Vector3(-playerScale.x, playerScale.y, playerScale.z);
             playerRigidBody.velocity = new Vector2(-speed, playerRigidBody.velocity.y);
@@ -92,7 +92,7 @@ public class PlayerControl : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && jumpCount != 0)
+        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Space)) && jumpCount != 0)
         {
             playerAni.SetBool("IfJump", true);
             playerAni.SetBool("IfFall", false);
@@ -108,7 +108,7 @@ public class PlayerControl : MonoBehaviour
                 jumpCount--;
             }
         }
-        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        else if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.Space))
         {
             if (playerRigidBody.velocity.y > 3.0f)
             {
@@ -168,7 +168,6 @@ public class PlayerControl : MonoBehaviour
         }
         else if (collision.transform.CompareTag("NextLevelSign"))
         {
-            Debug.Log("qwq");
             gameWindow.NextLevel();
         }
     }
@@ -176,9 +175,8 @@ public class PlayerControl : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Debug.Log("Player Trigger with " + other.transform.name + " Tag: " + other.transform.tag);
-        if (other.tag == "Enemy")
+        if (other.CompareTag("Enemy"))
         {
-            // Debug.Log("Player Trigger with Enemy");
             gameWindow.GameOver();
         }
     }
