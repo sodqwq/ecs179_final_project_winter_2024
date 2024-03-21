@@ -1,17 +1,10 @@
-| Key | Function |
-| --- | -------- |
-| W (or forward) | Character moves forward |
-| A (or left) | Character moves left |
-| S (or back) | Character moves back |
-| D (or right) | Character moves right |
-| Space (or LShift) | Character jumps |
-| Double Space | Character double jumps |
-| Left Mouse Click (or Z) | Character shooting |
-# The title of your game #
+#I Wanna QAQ#
 
 ## Summary ##
 
-**A paragraph-length pitch for your game.**
+**IWannaQAQ is a 2D side-scrolling video game that challenges both your reaction and your keyboard using ability. Our game was inspired by the game "I Wanna be the guy", a challenging side-scrolling game famous for it's unexpected traps
+and sudden death. After playing "I Wanna be the guy", our team decide to build our own I wanna series. Thus, this game is born. As the suffix QAQ(a crying face) indicates, this game is not a game that you can pass when lying on a sofa. Our
+goal is to provide you a challenge, and the sense of accomplishment. Be patient, and enjoy.**
 
 ## Project Resources
 
@@ -21,8 +14,17 @@
 [Proposal: make your own copy of the linked doc.](https://docs.google.com/document/d/1qwWCpMwKJGOLQ-rRJt8G8zisCa2XHFhv6zSWars0eWM/edit?usp=sharing)  
 
 ## Gameplay Explanation ##
+| Key | Function |
+| --- | -------- |
+| W (or forward) | Character moves forward |
+| A (or left) | Character moves left |
+| S (or back) | Character moves back |
+| D (or right) | Character moves right |
+| Space (or LShift) | Character jumps |
+| Double Space | Character double jumps |
+| Left Mouse Click (or Z) | Character shooting |
 
-**In this section, explain how the game should be played. Treat this as a manual within a game. Explaining the button mappings and the most optimal gameplay strategy is encouraged.**
+****
 
 
 **Add it here if you did work that should be factored into your grade but does not fit easily into the proscribed roles! Please include links to resources and descriptions of game-related material that does not fit into roles here.**
