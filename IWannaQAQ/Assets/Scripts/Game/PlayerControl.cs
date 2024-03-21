@@ -54,6 +54,8 @@ public class PlayerControl : MonoBehaviour
             int facing = isFacingRight ? 1 : -1;
             Vector3 bulletPosition = new Vector3((playerPosition.x + facing * 20), playerPosition.y, playerPosition.z);
             GameObject bullet = Instantiate(mBullet, bulletPosition, Quaternion.identity);
+            // Enable the bullet GameObject
+            bullet.SetActive(true);
             bullet.transform.parent = transform.parent;
             Bullet bulletScript = bullet.GetComponent<Bullet>();
             if (bulletScript != null)
