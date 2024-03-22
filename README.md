@@ -94,7 +94,7 @@ For now our project only supports keyboard and mouse input.
    - Replaced by a fixed camera that covers the whole map after several game testing
 
 2. **Involved in UI design**
-   - Providing art style support
+   - Providing art style support and creating in-game text
    - Adding UI art into [Resources](https://github.com/sodqwq/ecs179_final_project_winter_2024/tree/eb387ae3f3b9151d27c94014f9429e006fb6216b/IWannaQAQ/Assets/Resources/Font)
    - Adjust in-game UI [scripts](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/eb387ae3f3b9151d27c94014f9429e006fb6216b/IWannaQAQ/Assets/Scripts/Windows/RecordWindow.cs). Cooperated with Shengzhe Zhang
 
