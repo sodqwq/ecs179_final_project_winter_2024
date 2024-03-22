@@ -166,6 +166,8 @@ https://docs.google.com/document/d/12qvRJrqnnRamVZ7UshK5GT-E2r5l_Lq-M6aZ4PdDqck/
 
 **Summarize the key findings from your gameplay tests.**
 
+"We definitely need to fix the bugs – they can really mess up the game experience. Also, let’s make the levels more exciting! Instead of just using spikes everywhere, we could add some cool traps like falling apples or spikes that change size. That way, the game isn’t just harder, it’s more fun too. Plus, if we vary the difficulty levels, the game will be enjoyable for everyone, whether they're beginners or pros."
+
 ## Narrative Design
 
 During map design stage, we decide to bring different map style into the game to keep our player fresh whenever they entered a new level. Thus we used different background to provide different feelings.
