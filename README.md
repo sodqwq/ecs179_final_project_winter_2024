@@ -58,14 +58,24 @@ To enhance efficiency and communication, I've set up a Discord server for our te
 We ensure that tasks are clearly defined during development and maintain a Discord group chat for daily, prompt communication. This method is effective for us as few issues or decisions require everyone's collaboration. We've found that everyone is available on weekends, so we hold weekly meetings via Zoom then. Additionally, I organize more meetings as deadlines approach.
 
 Other responsibilities include participating in enemy design and implementing the enemy's mobile attack and death. I also create character bullets and implement shooting functions.
-## User Interface and Input
+## User Interface and Input - Jinyuan Zhang
 
-**Our User Interface includes basic start screen, a place to load your saved data after entering and a replay interface when player dies. We made the UI characters 2D retro style so they can fit to the style of our game.**
+Our User Interface includes basic start screen, a place to load your saved data after entering and a replay interface when player dies. We made the UI characters 2D retro style so they can fit to the style of our game.
 
-**Since this is a 2D side-scrolling game, all we need is player to move and jump. We set up 2 sets of input settings(demonstrated above), also consider the difficulty of the game, we allow players to shoot the save points to save their progress
-instead of touching them. We are so nice aren't we?**
+Since this is a 2D side-scrolling game, all we need is player to move and jump. We set up 2 sets of input settings(demonstrated above), also consider the difficulty of the game, we allow players to shoot the save points to save their progress
+instead of touching them. We are so nice aren't we?
 
-**For now our project only supports keyboard and mouse input**
+For now our project only supports keyboard and mouse input.
+
+1. **Helped adjust camera control**
+   - Wrote the player follow style camera during eraly devloping stage
+   - Replaced by a fixed camera that covers the whole map after several game testing
+
+2. **Involved in UI design**
+   - Provide art style support
+
+3. **Adjust the origin input settings to make game control more fluent**
+   - Evolved in devloping `PlayerControl.cs`
 
 ## Movement/Physics - Yirui Song
 
@@ -97,13 +107,13 @@ The consistent use of `Rigidbody2D.velocity` to directly set the object's speed 
 
 # Sub-Roles
 
-## Audio
+## Audio - Jinyuan Zhang
 
-**List your assets, including their sources and licenses.**
-
-**Describe the implementation of your audio system.**
-
-**Document the sound style.** 
+1. **Devloped BGM for each level**
+   - Implemented by combining `AudioSource` Component to each `map` in `prefab`
+   - Music is found in `QQ Music`, with download authentication
+2. **Devloped shooting sound**
+   - Bind the sound with `fire1` in `PlayerControl.cs` 
 
 ## Gameplay Testing
 
@@ -113,7 +123,8 @@ The consistent use of `Rigidbody2D.velocity` to directly set the object's speed 
 
 ## Narrative Design
 
-**Document how the narrative is present in the game via assets, gameplay systems, and gameplay.** 
+During map design stage, we decide to bring different map style into the game to keep our player fresh whenever they entered a new level. Thus we used different background to provide different feelings.
+Also, we added a short phrase in level 1 to warn players that any items in this game can be lethal. Although through Thursday's presentation, we found many didn't pay attention to the warning :(
 
 ## Press Kit and Trailer
 
@@ -123,4 +134,7 @@ The consistent use of `Rigidbody2D.velocity` to directly set the object's speed 
 
 ## Game Feel and Polish
 
-**Document what you added to and how you tweaked your game to improve its game feel.**
+We used different music in different maps to indicate it's overall feeling. For level 1 we used relaxing music so that players can get familiar with this game without being too nervous. Level 2 we start to use more tension music, noticing 
+our player that difficulty is rising. For level 3 we intentionally used a Xmas like music not only to fit the map but also relax the player, but soon they'll find everything is not that simple.
+
+We also added a smurai in level to actually give players some hitfeel. (Since shooting only save point is kind of boring.)
