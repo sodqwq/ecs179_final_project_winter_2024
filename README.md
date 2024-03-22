@@ -8,7 +8,7 @@ goal is to provide you a challenge, and the sense of accomplishment. Be patient,
 
 ## Project Resources
 
-[Web-playable version of your game.](https://lnp95.itch.io/i-wanna-qaq)
+[Web-playable version of our game.](https://lnp95.itch.io/i-wanna-qaq)
 
 [Trailor](https://youtu.be/ixP3epN1dXE)
 
@@ -131,9 +131,22 @@ Also, we added a short phrase in level 1 to warn players that any items in this 
 
 ## Press Kit and Trailer - Lin Zhu
 
-** Links to presskit materials and trailer: https://lnp95.itch.io/i-wanna-qaq **
+[Links to presskit materials and trailer:](https://lnp95.itch.io/i-wanna-qaq)
+Show my work:
+In the game's promotional video, I primarily showcase the three levels our team has designed, with difficulty ranging from easy to medium to hard mode. We begin with a voiceover ("Challenge the limits, solve the impossible! Embark on an adventure with the 'I wanna' series, navigating through three meticulously designed levels, each filled with challenges and surprises at every turn. Dare to ask yourself, are you ready to take on the challenge and prove your might?") to attract gamers. Then, we show a small snippet of each level. Finally, we include a complete walkthrough video, but the audience will not be aware of the hidden traps we've set up, which they'll need to discover for themselves.
 
-**Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**
+Sceenshots Chosing:
+Choosing three maps of different difficulties for your screenshots can provide a well-rounded view of your game. Here are 5 reasons why this approach is beneficial:
+
+1. Showcase Diversity in Gameplay: Highlighting different difficulty levels through screenshots illustrates the variety in gameplay and challenges players can expect. It demonstrates the game's depth and the range of skills needed to progress.
+
+2. Attract a Broader Audience: By displaying levels of varying difficulties, you cater to a wide range of gamers. Beginners or casual players might be drawn to the easier levels, while hardcore gamers might find the more difficult levels appealing.
+
+3. Highlight Game Design: Different difficulty levels allow you to showcase the creativity and thoughtfulness of your game design. It gives potential players a glimpse into the puzzles, environments, and obstacles that your team has meticulously crafted.
+
+4. Set Clear Expectations: By showing the range of difficulty, you set clear expectations about the game's challenge level. Players can better assess if the game suits their skill level and preferences, reducing the likelihood of disappointment.
+
+5. Tease Hidden Features and Traps: By showcasing advanced levels without revealing all the secrets or hidden traps, you create intrigue and a sense of mystery. Players will be eager to explore and discover what challenges await them, adding to the game's appeal.
 
 ## Game Feel and Polish
 
