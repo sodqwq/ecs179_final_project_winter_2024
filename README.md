@@ -113,9 +113,30 @@ The consistent use of `Rigidbody2D.velocity` to directly set the object's speed 
 
 **Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
 
-## Game Logic
+## Game Logic - Shengzhe Zhang
 
-**Document the game states and game data you managed and the design patterns you used to complete your task.**
+Email: zszzhang@ucdavis.edu
+
+I used to be a fan of 2D adventure games, so I proposed the idea of making a game similar to "I Wanna Be The Guy".
+
+1. **Overall Playstyle**:
+Even though this game is learned from "I Wanna Be The Guy", I don't want to make it like we are purely making a copy of it. We're thinking about different enemies, traps that move, more options for setting up your controls, and new looks for the levels and textures. The idea is to keep the game fast-paced: you try, you might mess up, and then you quickly jump back in. We want it to be fun, not frustrating. The control of your character will be super responsive – no waiting around, just hit a button and you're back in the game. We're also aiming for a sweet spot with the difficulty – not too hard, but not a walk in the park either. The music will be upbeat, something that keeps you pumped, and we’re going for visuals that are easy on the eyes, especially when the levels get tougher. That’s the kind of experience we’re going for.
+
+2. **Level Transitioning**
+We had a bit of a debate about how players should move from one level to the next in our game. The big question was whether to have a long, continuous map like in a Mario game, or to keep each level contained in one screen so players can see everything at once. We chose the second option because in a challenging game, it’s really helpful for players to know how close they are to beat the level.
+
+As for how to switch between levels, we tried a couple of different ways. Our first idea was to move the camera to a new area when you reach a certain point, like walking through an imaginary door that takes you to the next room. This sounded good, but it was kind of tricky to make it work the way we wanted.
+
+So, we switched to another method – it’s like using building blocks for each level. We made Prefabs for the levels and stored them in a list in the game. When it's time to change levels, we just replace the current one with the next. This way, everything resets back to the start, including any moving traps or enemies. It made things a lot simpler for us.
+
+You can see the code where the player reaches the end of a level here:
+https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/d4845f35754659a330c6a39bc345bcbc5c4e51c9/IWannaQAQ/Assets/Scripts/Game/PlayerControl.cs#L171C1-L185C6
+
+And the code for how the levels change in the StartWindow, RecordWindow, and GameWindow is here:
+[IWannaQAQ/Assets/Scripts/Windows]
+
+3. **Regulating Size**
+I did some research online about the size to choose, and I decided to make out screen 1000*760, and the sizes of the tiles are 32*32. For the tile resources that are not 32*32, we either resized them ourselves or gave them up.
 
 # Sub-Roles
 
@@ -128,9 +149,10 @@ The consistent use of `Rigidbody2D.velocity` to directly set the object's speed 
    - Introduced [music inital function](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/9e246b1a33b34755c3514c922b9735013c99f429/IWannaQAQ/Assets/Scripts/Game/PlayerControl.cs#L36)
    - Adjust [shooting command](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/eb387ae3f3b9151d27c94014f9429e006fb6216b/IWannaQAQ/Assets/Scripts/Game/PlayerControl.cs#L51) to implement shooting sound effect. This method can also be used in other sound        effect if future development needs.
 
-## Gameplay Testing
+## Gameplay Testing - Shengzhe Zhang
 
-**Add a link to the full results of your gameplay tests.**
+Result of the gameplay test:
+https://docs.google.com/document/d/12qvRJrqnnRamVZ7UshK5GT-E2r5l_Lq-M6aZ4PdDqck/edit?usp=sharing
 
 **Summarize the key findings from your gameplay tests.**
 
