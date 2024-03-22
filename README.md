@@ -164,4 +164,4 @@ Choosing three maps of different difficulties for your screenshots can provide a
 We used different music in different maps to indicate it's overall feeling. For level 1 we used relaxing music so that players can get familiar with this game without being too nervous. Level 2 we start to use more tension music, noticing 
 our player that difficulty is rising. For level 3 we intentionally used a Xmas like music not only to fit the map but also relax the player, but soon they'll find everything is not that simple.
 
-We also added a smurai in level to actually give players some hitfeel. (Since shooting only save point is kind of boring.)
+We also added a samurai in level to actually give players some hitfeel. (Since shooting only save point is kind of boring.)
