@@ -67,6 +67,8 @@ We ensure that tasks are clearly defined during development and maintain a Disco
 Other responsibilities include participating in enemy design and implementing the enemy's mobile attack and death. I also create character bullets and implement shooting functions.
 ## User Interface and Input - Jinyuan Zhang
 
+Email: ajyzhang@ucdavis.edu
+
 Our User Interface includes basic start screen, a place to load your saved data after entering and a replay interface when player dies. We made the UI characters 2D retro style so they can fit to the style of our game.
 
 Since this is a 2D side-scrolling game, all we need is player to move and jump. We set up 2 sets of input settings(demonstrated above), also consider the difficulty of the game, we allow players to shoot the save points to save their progress
