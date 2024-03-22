@@ -69,7 +69,21 @@ instead of touching them. We are so nice aren't we?**
 
 ## Movement/Physics
 
-**Describe the basics of movement and physics in your game. Is it the standard physics model? What did you change or modify? Did you make your movement scripts that do not use the physics system?**
+1. **Vertical Movement** (`AutoMove.cs`, `AutoMove2.cs`, `MovingDown.cs`):
+   - Objects move vertically with a constant speed (`speed` variable).
+   - The direction of movement can change upon colliding with specific objects (e.g., "Ground" or "Trap" tags). This is detected using `OnCollisionEnter2D` and the `CompareTag` method for efficient tag comparison.
+   - `MovingDown.cs` is set to move the object downwards initially by setting `movingUp` to `false` and adjusting the velocity accordingly.
+   - Sprite flipping on the Y-axis is utilized to visually indicate the change in direction.
+
+2. **Horizontal Movement** (`HorizontalMove.cs`, `HorizontalMoveRight.cs`):
+   - Objects move horizontally with a constant speed (`speed` variable).
+   - Direction changes on collision with certain objects, like "Pit" or "Ground", with a cooldown mechanism (`changeDirectionCooldown`) to prevent immediate direction changes back and forth.
+   - Initial direction and movement setup are done in the `Start` method, with velocity set according to the desired initial movement direction.
+   - Sprite flipping on the X-axis is used to represent the change in horizontal movement direction visually.
+
+The scripts use the `Rigidbody2D` component for movement, indicating that the Unity Physics Engine is in play, at least for collision detection and response. However, the movement logic, including direction changes and velocity adjustments, is custom-implemented, indicating a departure from relying solely on physics-based forces or impulses for movement control.
+
+The consistent use of `Rigidbody2D.velocity` to directly set the object's speed and direction, along with manual flipping of the sprite's orientation, suggests a customized approach to movement mechanics, tailored to the specific needs or desired gameplay experience of your game, rather than a fully physics-driven system.
 
 ## Animation and Visuals
 
