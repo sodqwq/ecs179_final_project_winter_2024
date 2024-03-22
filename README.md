@@ -123,7 +123,8 @@ The consistent use of `Rigidbody2D.velocity` to directly set the object's speed 
    - Implemented by combining `AudioSource` Component to each `map` in `prefab`
    - Music is found in `QQ Music`, with download authentication
 2. **Devloped shooting sound**
-   - Bind the sound with `fire1` in `PlayerControl.cs` 
+   - Introduced [music inital function](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/9e246b1a33b34755c3514c922b9735013c99f429/IWannaQAQ/Assets/Scripts/Game/PlayerControl.cs#L36)
+   - Adjust [shooting command](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/eb387ae3f3b9151d27c94014f9429e006fb6216b/IWannaQAQ/Assets/Scripts/Game/PlayerControl.cs#L51) to implement shooting sound effect. This method can also be used in other sound        effect if future development needs.
 
 ## Gameplay Testing
 
