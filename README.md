@@ -131,8 +131,9 @@ Also, we added a short phrase in level 1 to warn players that any items in this 
 
 ## Press Kit and Trailer - Lin Zhu
 
-[Link to presskit materials:](https://lnp95.itch.io/i-wanna-qaq)
-[Link to trailer:](https://youtu.be/ixP3epN1dXE)
+[Link to presskit materials](https://lnp95.itch.io/i-wanna-qaq)
+
+[Link to trailer](https://youtu.be/ixP3epN1dXE)
 
 Show my work:
 
