@@ -146,6 +146,8 @@ The second and third maps mark the official start of the game, featuring more co
 
 3.The Discarded Parts:
 -In the early stages of game development, I was responsible for creating a set of basic game character movements and corresponding animation effects, including walking and other basic interactive actions. However, due to various bugs in the jumping mechanism, we decided to abandon the existing framework early in the game's development.
+
+
 -Additionally, I designed a health system for the game aimed at increasing its challenge and strategic depth. (buy modified bullet logic) According to this system, the player's character has multiple lives, meaning that players wouldn't immediately lose the game after accidentally encountering a trap once. We hoped this approach would give players more opportunities to try and thereby enhance their enjoyment of the game. However, after further testing and evaluation, we realized that for maintaining the game's high difficulty and tension, not adopting this life system might be a better choice.
 
 ## Game Logic - Shengzhe Zhang
