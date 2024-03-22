@@ -134,7 +134,11 @@ All the resources we use are free resources from unity and itch.io:
 The second and third maps mark the official start of the game, featuring more complex terrains. As the difficulty of the maps increases, players will face more challenges but will also experience more fun and a sense of achievement.
 <img src="IWannaQAQ/static/map2.png" width="50%">
 <img src="IWannaQAQ/static/map3.png" width="50%">
-2. Regarding game logic, I was responsible for the game's save mechanism. Specifically, we've set up several [save points](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/dfe402e16697a3805ffd138bc2eff01ba6a8c9f6/IWannaQAQ/Assets/Scripts/Service/savePoint.cs#L3). Whenever a player's character [shoots a bullet that hits](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/dfe402e16697a3805ffd138bc2eff01ba6a8c9f6/IWannaQAQ/Assets/Scripts/Service/savePoint.cs#L18) one of these save points, the character's respawn point will update to the [latest save point](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/dfe402e16697a3805ffd138bc2eff01ba6a8c9f6/IWannaQAQ/Assets/Scripts/Windows/GameWindow.cs#L35). This means that if the character dies, they will not return to the beginning of the game but will instead reappear at the most recently updated save point. We hope to reduce players' frustration and make the game's pacing smoother.
+2. Regarding game logic, I was responsible for the game's save mechanism. Specifically, we've set up several [save points](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/dfe402e16697a3805ffd138bc2eff01ba6a8c9f6/IWannaQAQ/Assets/Scripts/Service/savePoint.cs#L3)
+ Whenever a player's character [shoots a bullet that hits](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/dfe402e16697a3805ffd138bc2eff01ba6a8c9f6/IWannaQAQ/Assets/Scripts/Service/savePoint.cs#L18) 
+ one of these save points, the character's respawn point will update to the 
+ [latest save point](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/dfe402e16697a3805ffd138bc2eff01ba6a8c9f6/IWannaQAQ/Assets/Scripts/Windows/GameWindow.cs#L35). 
+ This means that if the character dies, they will not return to the beginning of the game but will instead reappear at the most recently updated save point. We hope to reduce players' frustration and make the game's pacing smoother.
 
 ## Game Logic - Shengzhe Zhang
 
