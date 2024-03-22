@@ -90,6 +90,7 @@ For now our project only supports keyboard and mouse input.
      input detection bug and sound effect bug evolved within the original input receving script.
 
 ## Movement/Physics - Yirui Song
+e-mail:yirsong@ucdavis.edu
 
 1. **Vertical Movement** (`AutoMove.cs`, `AutoMove2.cs`, `MovingDown.cs`):
    - Objects move vertically with a constant speed (`speed` variable).
