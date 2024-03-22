@@ -126,9 +126,9 @@ The consistent use of `Rigidbody2D.velocity` to directly set the object's speed 
 During map design stage, we decide to bring different map style into the game to keep our player fresh whenever they entered a new level. Thus we used different background to provide different feelings.
 Also, we added a short phrase in level 1 to warn players that any items in this game can be lethal. Although through Thursday's presentation, we found many didn't pay attention to the warning :(
 
-## Press Kit and Trailer
+## Press Kit and Trailer - Lin Zhu
 
-**Include links to your presskit materials and trailer.**
+** Links to presskit materials and trailer: https://lnp95.itch.io/i-wanna-qaq **
 
 **Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**
 
