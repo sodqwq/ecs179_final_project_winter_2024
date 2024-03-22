@@ -67,7 +67,7 @@ instead of touching them. We are so nice aren't we?**
 
 **For now our project only supports keyboard and mouse input**
 
-## Movement/Physics
+## Movement/Physics - Yirui Song
 
 1. **Vertical Movement** (`AutoMove.cs`, `AutoMove2.cs`, `MovingDown.cs`):
    - Objects move vertically with a constant speed (`speed` variable).
