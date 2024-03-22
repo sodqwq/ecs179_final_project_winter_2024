@@ -64,7 +64,22 @@ To enhance efficiency and communication, I've set up a Discord server for our te
 
 We ensure that tasks are clearly defined during development and maintain a Discord group chat for daily, prompt communication. This method is effective for us as few issues or decisions require everyone's collaboration. We've found that everyone is available on weekends, so we hold weekly meetings via Zoom then. Additionally, I organize more meetings as deadlines approach.
 
-Other responsibilities include participating in enemy design and implementing the enemy's mobile attack and death. I also create character bullets and implement shooting functions.
+Other jobs: participating in enemy design and implementing the enemy's mobile attack and death. I also create character bullets and implement shooting functions.
+
+1. Introduced enemy in the levels
+  - Enemy prefab is obtained from free online resource
+  - Enemy script is added to make it attack the player and make it defend its region. [code](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/main/IWannaQAQ/Assets/Resources/Enemy/Hero%20Knight%20-%20Pixel%20Art/Demo/HeroKnight.cs)
+
+2. Introduced bullet for the player
+  - Implemented bullet shooting functionality. [code](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/main/IWannaQAQ/Assets/Scripts/Bullet.cs)
+  - Adjusted layer interaction for correct bullet behavior. e.g., Bullet should not be hitting certain layers and should be passing damage when collider trigger is hit
+
+3. Helped debugging and fixing various issues along the development of this game.
+
+![enemy attack](IWannaQAQ/static/2.gif)
+<img src="IWannaQAQ/static/9.gif" width="50%">
+
+
 ## User Interface and Input - Jinyuan Zhang
 
 Email: ajyzhang@ucdavis.edu
