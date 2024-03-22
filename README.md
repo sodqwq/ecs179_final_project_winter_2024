@@ -137,7 +137,7 @@ Also, we added a short phrase in level 1 to warn players that any items in this 
 
 Show my work:
 
-In the game's promotional video, I primarily showcase the three levels our team has designed, with difficulty ranging from easy to medium to hard mode. We begin with a voiceover ("Challenge the limits, solve the impossible! Embark on an adventure with the 'I wanna' series, navigating through three meticulously designed levels, each filled with challenges and surprises at every turn. Dare to ask yourself, are you ready to take on the challenge and prove your might?") to attract gamers. Then, we show a small snippet of each level. Finally, we include a complete walkthrough video, but the audience will not be aware of the hidden traps we've set up, which they'll need to discover for themselves.
+In the trailer, I primarily showcase the three levels our team has designed, with difficulty ranging from easy to medium to hard mode. We begin with a voiceover ("Challenge the limits, solve the impossible! Embark on an adventure with the 'I wanna' series, navigating through three meticulously designed levels, each filled with challenges and surprises at every turn. Dare to ask yourself, are you ready to take on the challenge and prove your might?") to attract gamers. Then, we show a small snippet of each level. Finally, we include a complete walkthrough video, but the audience will not be aware of the hidden traps we've set up, which they'll need to discover for themselves.
 
 Choosing three maps of different difficulties for your screenshots can provide a well-rounded view of your game. Here are 5 reasons why this approach is beneficial:
 
