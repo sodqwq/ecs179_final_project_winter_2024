@@ -8,13 +8,15 @@ goal is to provide you a challenge, and the sense of accomplishment. Be patient,
 
 ## Project Resources
 
-[Web-playable version]([https://lnp95.itch.io/i-wanna-qaq](https://itsbaishixi.itch.io/i-wanna-qaq))
+[Web-playable version 1](https://itsbaishixi.itch.io/i-wanna-qaq)
+
+[Web-playable version 2](https://lnp95.itch.io/i-wanna-qaq) 
 
 [Trailor](https://youtu.be/ixP3epN1dXE)
 
 [Press Kit](https://lnp95.itch.io/i-wanna-qaq)
 
-[Proposal]([https://docs.google.com/document/d/1qwWCpMwKJGOLQ-rRJt8G8zisCa2XHFhv6zSWars0eWM/edit?usp=sharing](https://docs.google.com/document/d/1_nMEb_RXa0Ur7HW8z5sD7NKg6w6jvhcvQI6_vIovgGs/edit#heading=h.m7k4pgdsz19u))  
+[Proposal](https://docs.google.com/document/d/1qwWCpMwKJGOLQ-rRJt8G8zisCa2XHFhv6zSWars0eWM/edit?usp=sharing](https://docs.google.com/document/d/1_nMEb_RXa0Ur7HW8z5sD7NKg6w6jvhcvQI6_vIovgGs/edit#heading=h.m7k4pgdsz19u)  
 
 ## Gameplay Explanation ##
 | Key | Function |
