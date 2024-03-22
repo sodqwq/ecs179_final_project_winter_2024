@@ -121,11 +121,23 @@ The scripts use the `Rigidbody2D` component for movement, indicating that the Un
 
 The consistent use of `Rigidbody2D.velocity` to directly set the object's speed and direction, along with manual flipping of the sprite's orientation, suggests a customized approach to movement mechanics, tailored to the specific needs or desired gameplay experience of your game, rather than a fully physics-driven system.
 
-## Animation and Visuals
+## Animation and Visuals - zhenshuo xu
 
 **List your assets, including their sources and licenses.**
+All the resources we use are free resources from unity and itch.io:
+- https://blackspirestudio.itch.io/medieval-pixel-art-asset-free
+- https://rottingpixels.itch.io/platformer-dungeon-tileset
 
 **Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
+All three of our maps feature pixel art style designs. To gradually acclimate players to the game, we've designed three maps, each with a progressively increasing level of difficulty. The first map is intended to familiarize players with the game's controls, including character movement, jumping, and saving, among other basic actions. Through this initial phase of guidance, players can gradually understand the game's basic rules and operation methods, preparing them for subsequent challenges.
+![map](IWannaQAQ/static/map1.png)
+<img src="IWannaQAQ/static/map1.png" width="50%">
+The second and third maps mark the official start of the game, featuring more complex terrains. As the difficulty of the maps increases, players will face more challenges but will also experience more fun and a sense of achievement.
+![map](IWannaQAQ/static/map2.png)
+<img src="IWannaQAQ/static/map2.png" width="50%">
+![map](IWannaQAQ/static/map3.png)
+<img src="IWannaQAQ/static/map3.png" width="50%">
+Regarding game logic, I was responsible for the game's save mechanism. Specifically, we've set up several [save points](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/dfe402e16697a3805ffd138bc2eff01ba6a8c9f6/IWannaQAQ/Assets/Scripts/Service/savePoint.cs#L3). Whenever a player's character [shoots a bullet that hits](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/dfe402e16697a3805ffd138bc2eff01ba6a8c9f6/IWannaQAQ/Assets/Scripts/Service/savePoint.cs#L18) one of these save points, the character's respawn point will update to the [latest save point](https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/dfe402e16697a3805ffd138bc2eff01ba6a8c9f6/IWannaQAQ/Assets/Scripts/Windows/GameWindow.cs#L35). This means that if the character dies, they will not return to the beginning of the game but will instead reappear at the most recently updated save point. We hope to reduce players' frustration and make the game's pacing smoother.
 
 ## Game Logic - Shengzhe Zhang
 
@@ -195,7 +207,7 @@ Choosing three maps of different difficulties for your screenshots can provide a
 
 5. Tease Hidden Features and Traps: By showcasing advanced levels without revealing all the secrets or hidden traps, you create intrigue and a sense of mystery. Players will be eager to explore and discover what challenges await them, adding to the game's appeal.
 
-## Game Feel and Polish
+## Game Feel and Polish -zhenshuo xu
 
 We used different music in different maps to indicate it's overall feeling. For level 1 we used relaxing music so that players can get familiar with this game without being too nervous. Level 2 we start to use more tension music, noticing 
 our player that difficulty is rising. For level 3 we intentionally used a Xmas like music not only to fit the map but also relax the player, but soon they'll find everything is not that simple.
