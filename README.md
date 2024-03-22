@@ -8,9 +8,9 @@ goal is to provide you a challenge, and the sense of accomplishment. Be patient,
 
 ## Project Resources
 
-[Web-playable version of your game.](https://itch.io/)  
-[Trailor](https://youtube.com)  
-[Press Kit](https://dopresskit.com/)  
+[Web-playable version of your game.]([https://itch.io/](https://lnp95.itch.io/i-wanna-qaq))  
+[Trailor]([https://youtube.com](https://youtu.be/ixP3epN1dXE))  
+[Press Kit]([https://dopresskit.com/](https://lnp95.itch.io/i-wanna-qaq))  
 [Proposal: make your own copy of the linked doc.](https://docs.google.com/document/d/1qwWCpMwKJGOLQ-rRJt8G8zisCa2XHFhv6zSWars0eWM/edit?usp=sharing)  
 
 ## Gameplay Explanation ##
