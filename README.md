@@ -132,7 +132,7 @@ And the code for how the levels change in the StartWindow, RecordWindow, and Gam
 [IWannaQAQ/Assets/Scripts/Windows]
 
 3. **Regulating Size**
-I did some research online about the size to choose, and I decided to make out screen 1000*760, and the sizes of the tiles are 32*32. For the tile resources that are not 32*32, we either resized them ourselves or gave them up.
+I did some research online about the size to choose, and I decided to make out screen 1000 by 760, and the sizes of the tiles are 32*32. For the tile resources that are not 32*32, we either resized them ourselves or gave them up.
 
 # Sub-Roles
 
