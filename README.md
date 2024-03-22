@@ -8,9 +8,7 @@ goal is to provide you a challenge, and the sense of accomplishment. Be patient,
 
 ## Project Resources
 
-[Web-playable version 1](https://itsbaishixi.itch.io/i-wanna-qaq)
-
-[Web-playable version 2](https://lnp95.itch.io/i-wanna-qaq) 
+[Web-playable version](https://lnp95.itch.io/i-wanna-qaq) 
 
 [Trailor](https://youtu.be/ixP3epN1dXE)
 
