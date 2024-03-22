@@ -145,6 +145,8 @@ The second and third maps mark the official start of the game, featuring more co
 
 
 3.The Discarded Parts:
+
+
 -In the early stages of game development, I was responsible for creating a set of basic game character movements and corresponding animation effects, including walking and other basic interactive actions. However, due to various bugs in the jumping mechanism, we decided to abandon the existing framework early in the game's development.
 
 
