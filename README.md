@@ -33,6 +33,8 @@ goal is to provide you a challenge, and the sense of accomplishment. Be patient,
 
 
 **Add it here if you did work that should be factored into your grade but does not fit easily into the proscribed roles! Please include links to resources and descriptions of game-related material that does not fit into roles here.**
+[Detailed Contribution](https://docs.google.com/spreadsheets/d/1LMZtTGkEsrY30iUUHjTyAvzNhGUfZH5FAmNbdq0FOLI/edit?usp=sharing)
+
 
 # Main Roles #
 
