@@ -79,10 +79,13 @@ For now our project only supports keyboard and mouse input.
    - Replaced by a fixed camera that covers the whole map after several game testing
 
 2. **Involved in UI design**
-   - Provide art style support
+   - Providing art style support
+   - Adding UI art into (Resources)[https://github.com/sodqwq/ecs179_final_project_winter_2024/tree/eb387ae3f3b9151d27c94014f9429e006fb6216b/IWannaQAQ/Assets/Resources/Font]
+   - Adjust in-game UI (scripts)[https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/eb387ae3f3b9151d27c94014f9429e006fb6216b/IWannaQAQ/Assets/Scripts/Windows/RecordWindow.cs]. Cooperated with Shengzhe Zhang
 
-3. **Adjust the origin input settings to make game control more fluent**
-   - Evolved in devloping `PlayerControl.cs`
+3. **Adjust the original input settings to make game control more fluent**
+   - Adjusting (PlayerControl.cs)[https://github.com/sodqwq/ecs179_final_project_winter_2024/blob/eb387ae3f3b9151d27c94014f9429e006fb6216b/IWannaQAQ/Assets/Scripts/Game/PlayerControl.cs] to create more comfortable gaming experience. Including input settings, shooting
+     input detection bug and sound effect bug evolved within the original input receving script.
 
 ## Movement/Physics - Yirui Song
 
